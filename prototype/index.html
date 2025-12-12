@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>XTrader App - 原型图</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="prototype-container">
+    <h1 class="prototype-title">XTrader App 原型图</h1>
+    <p class="prototype-subtitle">移动端UI设计规范 - Soft Modern Mobile UI</p>
+    
+    <div class="screens-grid">
+      <!-- ========== 1. 启动页/欢迎页 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">1. 启动页</h3>
+        <div class="phone-frame">
+          <div class="screen splash-screen">
+            <div class="splash-content">
+              <div class="app-logo">X</div>
+              <h1 class="app-name">XTrader</h1>
+              <p class="app-tagline">AI智能交易助手</p>
+              <div class="loading-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 2. 登录页 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">2. 登录页</h3>
+        <div class="phone-frame">
+          <div class="screen login-screen">
+            <div class="login-header">
+              <div class="login-logo">X</div>
+              <h1>欢迎回来</h1>
+              <p>登录您的XTrader账户</p>
+            </div>
+            <div class="login-form">
+              <div class="input-group">
+                <label>邮箱地址</label>
+                <input type="text" placeholder="请输入邮箱" class="form-input">
+              </div>
+              <div class="input-group">
+                <label>密码</label>
+                <input type="password" placeholder="请输入密码" class="form-input">
+                <span class="input-icon">👁</span>
+              </div>
+              <a href="#" class="forgot-password">忘记密码？</a>
+              <button class="btn-primary">登 录</button>
+              <div class="login-divider">
+                <span>或</span>
+              </div>
+              <button class="btn-secondary">创建新账户</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 3. 注册页 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">3. 注册页</h3>
+        <div class="phone-frame">
+          <div class="screen register-screen">
+            <div class="page-header">
+              <span class="back-btn">←</span>
+              <h2>创建账户</h2>
+              <span></span>
+            </div>
+            <div class="register-form">
+              <div class="input-group">
+                <label>邮箱地址</label>
+                <input type="text" placeholder="请输入邮箱" class="form-input">
+              </div>
+              <div class="input-group">
+                <label>密码</label>
+                <input type="password" placeholder="至少8位字符" class="form-input">
+              </div>
+              <div class="input-group">
+                <label>确认密码</label>
+                <input type="password" placeholder="再次输入密码" class="form-input">
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="agree">
+                <label for="agree">我已阅读并同意<a href="#">服务条款</a></label>
+              </div>
+              <button class="btn-primary">注 册</button>
+              <p class="login-link">已有账户？<a href="#">立即登录</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 4. 首页/仪表盘 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">4. 首页仪表盘</h3>
+        <div class="phone-frame">
+          <div class="screen dashboard-screen">
+            <!-- 顶部栏 -->
+            <div class="top-bar">
+              <div class="user-info">
+                <div class="avatar">U</div>
+                <span>下午好，用户</span>
+              </div>
+              <div class="top-actions">
+                <span class="icon-btn">🔔</span>
+                <span class="icon-btn">⚙️</span>
+              </div>
+            </div>
+            
+            <!-- 总资产卡片 -->
+            <div class="asset-card card-dark">
+              <div class="asset-label">总资产 (USDT)</div>
+              <div class="asset-value">$12,458.32</div>
+              <div class="asset-change positive">+$234.56 (+1.92%)</div>
+              <div class="asset-actions">
+                <button class="action-btn">充值</button>
+                <button class="action-btn">提现</button>
+              </div>
+            </div>
+
+            <!-- 快捷统计 -->
+            <div class="stats-row">
+              <div class="stat-card card-green">
+                <span class="stat-icon">📈</span>
+                <div class="stat-info">
+                  <span class="stat-value">+18.5%</span>
+                  <span class="stat-label">本月收益</span>
+                </div>
+              </div>
+              <div class="stat-card card-lavender">
+                <span class="stat-icon">🤖</span>
+                <div class="stat-info">
+                  <span class="stat-value">3</span>
+                  <span class="stat-label">运行中AI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 持仓列表 -->
+            <div class="section-header">
+              <h3>当前持仓</h3>
+              <a href="#">查看全部 →</a>
+            </div>
+            <div class="position-list">
+              <div class="position-item">
+                <div class="position-left">
+                  <div class="coin-icon">₿</div>
+                  <div class="coin-info">
+                    <span class="coin-name">BTC/USDT</span>
+                    <span class="position-side long">做多 10x</span>
+                  </div>
+                </div>
+                <div class="position-right">
+                  <span class="pnl positive">+$156.23</span>
+                  <span class="pnl-pct positive">+2.34%</span>
+                </div>
+              </div>
+              <div class="position-item">
+                <div class="position-left">
+                  <div class="coin-icon">Ξ</div>
+                  <div class="coin-info">
+                    <span class="coin-name">ETH/USDT</span>
+                    <span class="position-side short">做空 5x</span>
+                  </div>
+                </div>
+                <div class="position-right">
+                  <span class="pnl negative">-$42.15</span>
+                  <span class="pnl-pct negative">-1.12%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 底部导航 -->
+            <nav class="bottom-nav">
+              <div class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span>首页</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">🤖</span>
+                <span>AI交易</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">🏆</span>
+                <span>排行榜</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span>我的</span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 5. AI交易员列表 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">5. AI交易员</h3>
+        <div class="phone-frame">
+          <div class="screen traders-screen">
+            <div class="page-header">
+              <h2>AI交易员</h2>
+              <button class="add-btn">+ 创建</button>
+            </div>
+
+            <!-- 配置状态 -->
+            <div class="config-status">
+              <div class="config-item">
+                <span class="config-icon">🧠</span>
+                <span>已配置 2 个AI模型</span>
+              </div>
+              <div class="config-item">
+                <span class="config-icon">🏦</span>
+                <span>已配置 1 个交易所</span>
+              </div>
+            </div>
+
+            <!-- 交易员卡片列表 -->
+            <div class="trader-list">
+              <div class="trader-card">
+                <div class="trader-header">
+                  <div class="trader-avatar">🤖</div>
+                  <div class="trader-info">
+                    <h4>Alpha策略</h4>
+                    <span class="trader-tag">DeepSeek + Binance</span>
+                  </div>
+                  <div class="status-badge running">运行中</div>
+                </div>
+                <div class="trader-stats">
+                  <div class="trader-stat">
+                    <span class="label">总收益</span>
+                    <span class="value positive">+$1,234.56</span>
+                  </div>
+                  <div class="trader-stat">
+                    <span class="label">收益率</span>
+                    <span class="value positive">+12.34%</span>
+                  </div>
+                  <div class="trader-stat">
+                    <span class="label">持仓</span>
+                    <span class="value">3</span>
+                  </div>
+                </div>
+                <div class="trader-actions">
+                  <button class="btn-outline">查看详情</button>
+                  <button class="btn-outline">暂停</button>
+                </div>
+              </div>
+
+              <div class="trader-card">
+                <div class="trader-header">
+                  <div class="trader-avatar">🤖</div>
+                  <div class="trader-info">
+                    <h4>Beta策略</h4>
+                    <span class="trader-tag">Qwen + Hyperliquid</span>
+                  </div>
+                  <div class="status-badge stopped">已停止</div>
+                </div>
+                <div class="trader-stats">
+                  <div class="trader-stat">
+                    <span class="label">总收益</span>
+                    <span class="value negative">-$56.78</span>
+                  </div>
+                  <div class="trader-stat">
+                    <span class="label">收益率</span>
+                    <span class="value negative">-0.56%</span>
+                  </div>
+                  <div class="trader-stat">
+                    <span class="label">持仓</span>
+                    <span class="value">0</span>
+                  </div>
+                </div>
+                <div class="trader-actions">
+                  <button class="btn-outline">查看详情</button>
+                  <button class="btn-primary-sm">启动</button>
+                </div>
+              </div>
+            </div>
+
+            <nav class="bottom-nav">
+              <div class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>首页</span>
+              </div>
+              <div class="nav-item active">
+                <span class="nav-icon">🤖</span>
+                <span>AI交易</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">🏆</span>
+                <span>排行榜</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span>我的</span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 6. 交易员详情 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">6. 交易员详情</h3>
+        <div class="phone-frame">
+          <div class="screen detail-screen">
+            <div class="page-header">
+              <span class="back-btn">←</span>
+              <h2>Alpha策略</h2>
+              <span class="icon-btn">⚙️</span>
+            </div>
+
+            <!-- 收益曲线 -->
+            <div class="chart-card">
+              <div class="chart-header">
+                <span>收益曲线</span>
+                <div class="chart-tabs">
+                  <span class="active">7天</span>
+                  <span>30天</span>
+                  <span>全部</span>
+                </div>
+              </div>
+              <div class="chart-placeholder">
+                <svg viewBox="0 0 200 80" class="chart-line">
+                  <polyline fill="none" stroke="#93B8C9" stroke-width="2"
+                    points="0,60 20,55 40,45 60,50 80,35 100,40 120,25 140,30 160,15 180,20 200,10"/>
+                  <polyline fill="url(#chartGradient)" stroke="none"
+                    points="0,80 0,60 20,55 40,45 60,50 80,35 100,40 120,25 140,30 160,15 180,20 200,10 200,80"/>
+                  <defs>
+                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#93B8C9" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="#93B8C9" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <!-- 账户概览 -->
+            <div class="overview-grid">
+              <div class="overview-item">
+                <span class="label">总净值</span>
+                <span class="value">$5,234.56</span>
+              </div>
+              <div class="overview-item">
+                <span class="label">可用余额</span>
+                <span class="value">$3,120.00</span>
+              </div>
+              <div class="overview-item">
+                <span class="label">总收益</span>
+                <span class="value positive">+$1,234.56</span>
+              </div>
+              <div class="overview-item">
+                <span class="label">收益率</span>
+                <span class="value positive">+12.34%</span>
+              </div>
+            </div>
+
+            <!-- AI决策记录 -->
+            <div class="section-header">
+              <h3>AI决策记录</h3>
+              <a href="#">更多 →</a>
+            </div>
+            <div class="decision-list">
+              <div class="decision-item">
+                <div class="decision-header">
+                  <span class="cycle">#128</span>
+                  <span class="time">今天 14:32</span>
+                  <span class="status success">✓</span>
+                </div>
+                <div class="decision-actions">
+                  <span class="action-tag buy">买入 BTC 10x</span>
+                  <span class="action-price">@67,234.50</span>
+                </div>
+              </div>
+              <div class="decision-item">
+                <div class="decision-header">
+                  <span class="cycle">#127</span>
+                  <span class="time">今天 14:02</span>
+                  <span class="status success">✓</span>
+                </div>
+                <div class="decision-actions">
+                  <span class="action-tag sell">卖出 ETH</span>
+                  <span class="action-price">@3,456.78</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 7. 排行榜 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">7. 排行榜</h3>
+        <div class="phone-frame">
+          <div class="screen ranking-screen">
+            <div class="page-header-simple">
+              <h2>🏆 AI竞技场</h2>
+              <span class="live-badge">● LIVE</span>
+            </div>
+
+            <!-- 冠军展示 -->
+            <div class="champion-card">
+              <div class="crown">👑</div>
+              <div class="champion-name">SuperAI</div>
+              <div class="champion-pnl">+28.45%</div>
+              <div class="champion-label">本周领先</div>
+            </div>
+
+            <!-- 排行榜列表 -->
+            <div class="ranking-list">
+              <div class="ranking-item gold">
+                <span class="rank">🥇</span>
+                <div class="rank-info">
+                  <span class="rank-name">SuperAI</span>
+                  <span class="rank-tag">DeepSeek + Binance</span>
+                </div>
+                <div class="rank-pnl positive">+28.45%</div>
+              </div>
+              <div class="ranking-item silver">
+                <span class="rank">🥈</span>
+                <div class="rank-info">
+                  <span class="rank-name">AlphaBot</span>
+                  <span class="rank-tag">Qwen + Hyperliquid</span>
+                </div>
+                <div class="rank-pnl positive">+21.32%</div>
+              </div>
+              <div class="ranking-item bronze">
+                <span class="rank">🥉</span>
+                <div class="rank-info">
+                  <span class="rank-name">TradeMaster</span>
+                  <span class="rank-tag">Claude + Bybit</span>
+                </div>
+                <div class="rank-pnl positive">+15.67%</div>
+              </div>
+              <div class="ranking-item">
+                <span class="rank">4</span>
+                <div class="rank-info">
+                  <span class="rank-name">SmartTrader</span>
+                  <span class="rank-tag">DeepSeek + Binance</span>
+                </div>
+                <div class="rank-pnl positive">+12.34%</div>
+              </div>
+              <div class="ranking-item">
+                <span class="rank">5</span>
+                <div class="rank-info">
+                  <span class="rank-name">AIQuant</span>
+                  <span class="rank-tag">Qwen + Binance</span>
+                </div>
+                <div class="rank-pnl positive">+8.92%</div>
+              </div>
+            </div>
+
+            <nav class="bottom-nav">
+              <div class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>首页</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">🤖</span>
+                <span>AI交易</span>
+              </div>
+              <div class="nav-item active">
+                <span class="nav-icon">🏆</span>
+                <span>排行榜</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span>我的</span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 8. 个人中心 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">8. 个人中心</h3>
+        <div class="phone-frame">
+          <div class="screen profile-screen">
+            <!-- 用户信息 -->
+            <div class="profile-header">
+              <div class="profile-avatar">U</div>
+              <h2>user@example.com</h2>
+              <span class="member-badge">VIP会员</span>
+            </div>
+
+            <!-- 菜单列表 -->
+            <div class="menu-section">
+              <div class="menu-item">
+                <span class="menu-icon">🔐</span>
+                <span class="menu-text">安全设置</span>
+                <span class="menu-arrow">→</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-icon">🔔</span>
+                <span class="menu-text">消息通知</span>
+                <span class="menu-arrow">→</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-icon">🌙</span>
+                <span class="menu-text">深色模式</span>
+                <div class="toggle-switch on"></div>
+              </div>
+              <div class="menu-item">
+                <span class="menu-icon">🌐</span>
+                <span class="menu-text">语言</span>
+                <span class="menu-value">简体中文</span>
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <div class="menu-item">
+                <span class="menu-icon">❓</span>
+                <span class="menu-text">帮助与FAQ</span>
+                <span class="menu-arrow">→</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-icon">📞</span>
+                <span class="menu-text">联系客服</span>
+                <span class="menu-arrow">→</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-icon">📄</span>
+                <span class="menu-text">关于XTrader</span>
+                <span class="menu-arrow">→</span>
+              </div>
+            </div>
+
+            <button class="logout-btn">退出登录</button>
+
+            <nav class="bottom-nav">
+              <div class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>首页</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">🤖</span>
+                <span>AI交易</span>
+              </div>
+              <div class="nav-item">
+                <span class="nav-icon">🏆</span>
+                <span>排行榜</span>
+              </div>
+              <div class="nav-item active">
+                <span class="nav-icon">👤</span>
+                <span>我的</span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== 9. 创建交易员弹窗 ========== -->
+      <div class="screen-wrapper">
+        <h3 class="screen-label">9. 创建交易员</h3>
+        <div class="phone-frame">
+          <div class="screen modal-screen">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>创建AI交易员</h3>
+                <span class="close-btn">✕</span>
+              </div>
+              <div class="modal-body">
+                <div class="input-group">
+                  <label>交易员名称</label>
+                  <input type="text" placeholder="给你的AI取个名字" class="form-input">
+                </div>
+                <div class="input-group">
+                  <label>选择AI模型</label>
+                  <select class="form-select">
+                    <option>DeepSeek</option>
+                    <option>Qwen</option>
+                    <option>Claude</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label>选择交易所</label>
+                  <select class="form-select">
+                    <option>Binance</option>
+                    <option>Hyperliquid</option>
+                    <option>Bybit</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label>策略模板</label>
+                  <select class="form-select">
+                    <option>默认策略</option>
+                    <option>保守策略</option>
+                    <option>激进策略</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn-secondary">取消</button>
+                <button class="btn-primary">创建</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 设计规范说明 -->
+    <div class="design-spec">
+      <h2>📐 设计规范</h2>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <h4>色彩</h4>
+          <div class="color-palette">
+            <div class="color-swatch" style="background:#FAFAFA"><span>背景 #FAFAFA</span></div>
+            <div class="color-swatch" style="background:#333D44;color:#fff"><span>深卡片 #333D44</span></div>
+            <div class="color-swatch" style="background:#93B8C9"><span>蓝强调 #93B8C9</span></div>
+            <div class="color-swatch" style="background:#E8F5E8"><span>浅绿 #E8F5E8</span></div>
+            <div class="color-swatch" style="background:#F0EDF3"><span>浅紫 #F0EDF3</span></div>
+            <div class="color-swatch" style="background:#FFC300"><span>金黄 #FFC300</span></div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <h4>字体</h4>
+          <p>Inter, sans-serif</p>
+          <p>Display: 32px / 700</p>
+          <p>Heading: 18px / 600</p>
+          <p>Body: 14px / 400</p>
+          <p>Caption: 12px / 400</p>
+        </div>
+        <div class="spec-item">
+          <h4>间距</h4>
+          <p>基础单位: 8px</p>
+          <p>s_base: 8px</p>
+          <p>s_2x: 16px</p>
+          <p>s_3x: 24px</p>
+          <p>s_4x: 32px</p>
+        </div>
+        <div class="spec-item">
+          <h4>圆角 & 阴影</h4>
+          <p>卡片: 16px</p>
+          <p>元素: 12px</p>
+          <p>按钮: 12px</p>
+          <p>阴影: 0px 2px 4px rgba(0,0,0,0.08)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
