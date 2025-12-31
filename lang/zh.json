@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "pageTitle": "XTrader | AI驱动的智能加密货币交易平台",
+    "description": "XTrader:AI驱动的智能加密货币交易平台,支持多交易所接入、实时风控与自动化交易策略。"
+  },
+  "nav": {
+    "features": "功能亮点",
+    "prototype": "产品原型",
+    "privacy": "隐私政策",
+    "contact": "联系我们",
+    "backHome": "返回首页"
+  },
+  "hero": {
+    "eyebrow": "AI驱动 · 多交易所 · 实时风控",
+    "title": "XTrader<br>AI驱动的智能加密货币交易平台",
+    "lead": "用智能算法守护每一次下单。XTrader 将策略编排、交易所接入与风控监控集成到一体,为专业交易者提供高速、透明、可审计的自动化交易体验。",
+    "ctaDemo": "预约演示",
+    "ctaPrivacy": "查看隐私政策",
+    "badge": "支持 Binance / Hyperliquid / Bybit",
+    "riskMonitoring": "实时风险监控",
+    "riskDesc": "毫秒级数据采集、风控阈值预警、自动止盈止损,降低尾部风险。",
+    "featureHotSwap": "策略热切换与回滚",
+    "featurePermission": "账户与API权限分级",
+    "featureAudit": "全链路审计日志",
+    "statLatency": "执行延迟",
+    "statLatencyValue": "<10 ms",
+    "statAI": "AI策略",
+    "statAIValue": "深度/量化/套利",
+    "statSecurity": "安全",
+    "statSecurityValue": "密钥分层加密"
+  },
+  "features": {
+    "title": "功能亮点",
+    "desc": "围绕"安全、效率、透明"构建的全栈交易基础设施,适配多种 AI 策略与交易场景。",
+    "aiStrategy": "AI策略编排",
+    "aiStrategyDesc": "快速接入 DeepSeek、Qwen、Claude 等模型,自由组合信号源与执行模板。",
+    "aiFeature1": "策略版本化",
+    "aiFeature2": "信号回测与对照组",
+    "aiFeature3": "运行中热更新",
+    "security": "安全合规",
+    "securityDesc": "API 密钥分级、最小权限、操作审计,敏感数据端到端加密存储。",
+    "securityFeature1": "双重签名与风控阈值",
+    "securityFeature2": "异常交易自动熔断",
+    "securityFeature3": "审计日志可导出",
+    "exchanges": "多交易所接入",
+    "exchangesDesc": "Binance、Hyperliquid、Bybit 等主流衍生品交易所一键绑定,支持分账户隔离。",
+    "exchangesFeature1": "Webhook / REST / WS",
+    "exchangesFeature2": "账户风控模板化",
+    "exchangesFeature3": "资产与收益实时同步"
+  },
+  "prototype": {
+    "title": "产品展示",
+    "desc": "AI 驱动、实时风控、多交易所接入。",
+    "label1": "1. 启动页",
+    "label2": "2. 登录页",
+    "label3": "3. 注册页",
+    "label4": "4. 首页仪表盘",
+    "label5": "5. AI交易员",
+    "label6": "6. 交易员详情",
+    "label7": "7. 排行榜",
+    "label8": "8. 个人中心",
+    "label9": "9. 创建交易员"
+  },
+  "splash": {
+    "appName": "XTrader",
+    "tagline": "AI智能交易助手"
+  },
+  "login": {
+    "title": "欢迎回来",
+    "subtitle": "登录您的XTrader账户",
+    "email": "邮箱地址",
+    "emailPlaceholder": "请输入邮箱",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "forgotPassword": "忘记密码?",
+    "loginBtn": "登 录",
+    "or": "或",
+    "createAccount": "创建新账户"
+  },
+  "register": {
+    "title": "创建账户",
+    "email": "邮箱地址",
+    "emailPlaceholder": "请输入邮箱",
+    "password": "密码",
+    "passwordPlaceholder": "至少8位字符",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "再次输入密码",
+    "agree": "我已阅读并同意",
+    "terms": "服务条款",
+    "registerBtn": "注 册",
+    "hasAccount": "已有账户?",
+    "loginNow": "立即登录"
+  },
+  "dashboard": {
+    "greeting": "下午好,用户",
+    "totalAsset": "总资产 (USDT)",
+    "assetValue": "$12,458.32",
+    "assetChange": "+$234.56 (+1.92%)",
+    "deposit": "充值",
+    "withdraw": "提现",
+    "monthlyReturn": "+18.5%",
+    "monthlyReturnLabel": "本月收益",
+    "runningAI": "3",
+    "runningAILabel": "运行中AI",
+    "currentPositions": "当前持仓",
+    "viewAll": "查看全部 →",
+    "long": "做多",
+    "short": "做空"
+  },
+  "traders": {
+    "title": "AI交易员",
+    "createBtn": "+ 创建",
+    "configured": "已配置",
+    "aiModels": "个AI模型",
+    "exchanges": "个交易所",
+    "strategy": "策略",
+    "running": "运行中",
+    "stopped": "已停止",
+    "totalPnL": "总收益",
+    "returnRate": "收益率",
+    "positions": "持仓",
+    "viewDetails": "查看详情",
+    "pause": "暂停",
+    "start": "启动"
+  },
+  "detail": {
+    "profitCurve": "收益曲线",
+    "days7": "7天",
+    "days30": "30天",
+    "all": "全部",
+    "totalEquity": "总净值",
+    "availableBalance": "可用余额",
+    "totalPnL": "总收益",
+    "returnRate": "收益率",
+    "aiDecisions": "AI决策记录",
+    "more": "更多 →",
+    "today": "今天",
+    "buy": "买入",
+    "sell": "卖出",
+    "cycle": "#"
+  },
+  "ranking": {
+    "title": "🏆 AI竞技场",
+    "live": "● LIVE",
+    "weeklyLeader": "本周领先",
+    "champion": "冠军"
+  },
+  "profile": {
+    "vipMember": "VIP会员",
+    "security": "安全设置",
+    "notifications": "消息通知",
+    "darkMode": "深色模式",
+    "language": "语言",
+    "languageValue": "简体中文",
+    "help": "帮助与FAQ",
+    "contact": "联系客服",
+    "about": "关于XTrader",
+    "logout": "退出登录"
+  },
+  "modal": {
+    "createTrader": "创建AI交易员",
+    "traderName": "交易员名称",
+    "traderNamePlaceholder": "给你的AI取个名字",
+    "selectAI": "选择AI模型",
+    "selectExchange": "选择交易所",
+    "strategyTemplate": "策略模板",
+    "defaultStrategy": "默认策略",
+    "conservativeStrategy": "保守策略",
+    "aggressiveStrategy": "激进策略",
+    "cancel": "取消",
+    "create": "创建"
+  },
+  "bottomNav": {
+    "home": "首页",
+    "aiTrading": "AI交易",
+    "leaderboard": "排行榜",
+    "profile": "我的"
+  },
+  "privacy": {
+    "title": "隐私与合规",
+    "desc": "我们在收集、存储、传输与使用数据的全链路中实施加密与审计,确保数据最小化与用户可控。",
+    "dataSecurity": "数据安全",
+    "dataSecurityDesc": "敏感密钥分层加密,传输全程 TLS,异常操作自动告警与冻结。",
+    "dataSecurityFeature1": "访问控制:按角色、按环境",
+    "dataSecurityFeature2": "日志留存:可导出审计报表",
+    "dataSecurityFeature3": "备份与恢复:周期校验",
+    "privacyPolicy": "隐私政策",
+    "privacyPolicyDesc": "透明说明数据收集、用途、Cookie、第三方处理者、用户权利与联系我们方式。",
+    "readFullPolicy": "阅读完整政策",
+    "email": "邮箱:taosiyuan163@163.com"
+  },
+  "contact": {
+    "title": "联系我们",
+    "desc": "希望了解深度对接、私有化部署或合规评估,请直接发邮件,我们会尽快回复。",
+    "emailContact": "邮件联系",
+    "backToTop": "返回顶部"
+  },
+  "footer": {
+    "copyright": "© 2025 XTrader. All rights reserved.",
+    "privacy": "隐私政策",
+    "contactEmail": "联系邮箱"
+  }
+}

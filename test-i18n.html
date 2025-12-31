@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i18n Test - XTrader</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .test-container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow-card);
+    }
+    .test-item {
+      padding: 12px;
+      margin: 8px 0;
+      background: #f5f6f8;
+      border-radius: 8px;
+      font-family: monospace;
+    }
+    .test-label {
+      font-weight: bold;
+      color: #333d44;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="brand-mark">X</div>
+        <span>XTrader i18n Test</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="test-container">
+    <h1>i18n System Test</h1>
+    <p>This page tests the internationalization system. The language switcher should appear in the top-right corner.</p>
+
+    <h2>Test Items:</h2>
+
+    <div class="test-item">
+      <span class="test-label">Navigation - Features:</span>
+      <span data-i18n="nav.features">Features</span>
+    </div>
+
+    <div class="test-item">
+      <span class="test-label">Hero - Eyebrow:</span>
+      <span data-i18n="hero.eyebrow">AI-Driven · Multi-Exchange · Real-Time Risk Control</span>
+    </div>
+
+    <div class="test-item">
+      <span class="test-label">Features - Title:</span>
+      <span data-i18n="features.title">Features</span>
+    </div>
+
+    <div class="test-item">
+      <span class="test-label">Login - Email Placeholder:</span>
+      <input type="text" data-i18n-placeholder="login.emailPlaceholder" placeholder="Enter your email" style="width: 100%; padding: 8px; border: 1px solid #e5e7eb; border-radius: 4px;">
+    </div>
+
+    <div class="test-item">
+      <span class="test-label">Current Language:</span>
+      <span id="current-lang">Loading...</span>
+    </div>
+
+    <h2>Instructions:</h2>
+    <ol>
+      <li>Click the language switcher button in the top-right corner</li>
+      <li>Verify that all text above changes between English and Chinese</li>
+      <li>Check that the placeholder text in the input field also changes</li>
+      <li>Refresh the page and verify language preference is remembered</li>
+    </ol>
+
+    <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 8px; border: 1px solid #ffc107;">
+      <strong>Expected Behavior:</strong>
+      <ul>
+        <li>Default language: English</li>
+        <li>Language preference saved in localStorage</li>
+        <li>All elements with data-i18n attributes should translate</li>
+        <li>Placeholders with data-i18n-placeholder should translate</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- i18n Scripts -->
+  <script src="i18n.js"></script>
+  <script>
+    // Load translations and initialize i18n
+    Promise.all([
+      fetch('lang/en.json').then(r => r.json()),
+      fetch('lang/zh.json').then(r => r.json())
+    ]).then(([en, zh]) => {
+      window.i18n.init({ en, zh });
+
+      // Display current language
+      document.getElementById('current-lang').textContent = window.i18n.getCurrentLang();
+
+      // Update current language display when language changes
+      window.i18n.subscribe((lang) => {
+        document.getElementById('current-lang').textContent = lang;
+      });
+
+      console.log('✅ i18n system initialized successfully');
+      console.log('Current language:', window.i18n.getCurrentLang());
+    }).catch(err => {
+      console.error('❌ Failed to load translations:', err);
+      document.getElementById('current-lang').textContent = 'Error loading translations';
+    });
+  </script>
+</body>
+</html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XTrader | AI驱动的智能加密货币交易平台</title>
-  <meta name="description" content="XTrader：AI驱动的智能加密货币交易平台，支持多交易所接入、实时风控与自动化交易策略。">
+  <title>XTrader | AI-Powered Intelligent Cryptocurrency Trading Platform</title>
+  <meta name="description" content="XTrader: AI-powered intelligent cryptocurrency trading platform with multi-exchange integration, real-time risk control, and automated trading strategies.">
+  <meta name="i18n-page-title" content="meta.pageTitle">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,10 +17,10 @@
         <span>XTrader</span>
       </div>
       <nav class="nav-links">
-        <a href="#features">功能亮点</a>
-        <a href="#prototype">产品原型</a>
-        <a href="#privacy">隐私政策</a>
-        <a href="#contact">联系我们</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#prototype" data-i18n="nav.prototype">Product Demo</a>
+        <a href="#privacy" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="#contact" data-i18n="nav.contact">Contact Us</a>
       </nav>
     </div>
   </header>
@@ -27,72 +28,72 @@
   <main class="container">
     <section class="hero">
       <div>
-        <span class="eyebrow">AI驱动 · 多交易所 · 实时风控</span>
-        <h1>XTrader<br>AI驱动的智能加密货币交易平台</h1>
-        <p class="lead">用智能算法守护每一次下单。XTrader 将策略编排、交易所接入与风控监控集成到一体，为专业交易者提供高速、透明、可审计的自动化交易体验。</p>
+        <span class="eyebrow" data-i18n="hero.eyebrow">AI-Driven · Multi-Exchange · Real-Time Risk Control</span>
+        <h1><span data-i18n="hero.title">XTrader<br>AI-Powered Intelligent Cryptocurrency Trading Platform</span></h1>
+        <p class="lead" data-i18n="hero.lead">Guard every order with intelligent algorithms. XTrader integrates strategy orchestration, exchange connectivity, and risk monitoring into one platform, providing professional traders with fast, transparent, and auditable automated trading experience.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="mailto:taosiyuan163@163.com">预约演示</a>
-          <a class="btn btn-ghost" href="privacy.html">查看隐私政策</a>
-          <span class="badge">支持 Binance / Hyperliquid / Bybit</span>
+          <a class="btn btn-primary" href="mailto:taosiyuan163@163.com" data-i18n="hero.ctaDemo">Request Demo</a>
+          <a class="btn btn-ghost" href="privacy.html" data-i18n="hero.ctaPrivacy">View Privacy Policy</a>
+          <span class="badge" data-i18n="hero.badge">Supports Binance / Hyperliquid / Bybit</span>
         </div>
       </div>
       <div class="card" style="box-shadow: var(--shadow-card);">
         <div class="icon-bullet">⚡</div>
-        <h3>实时风险监控</h3>
-        <p>毫秒级数据采集、风控阈值预警、自动止盈止损，降低尾部风险。</p>
+        <h3 data-i18n="hero.riskMonitoring">Real-Time Risk Monitoring</h3>
+        <p data-i18n="hero.riskDesc">Millisecond-level data collection, risk threshold alerts, automated stop-loss/take-profit to reduce tail risk.</p>
         <ul class="feature-list">
-          <li>✅ 策略热切换与回滚</li>
-          <li>✅ 账户与API权限分级</li>
-          <li>✅ 全链路审计日志</li>
+          <li>✅ <span data-i18n="hero.featureHotSwap">Strategy hot-swap & rollback</span></li>
+          <li>✅ <span data-i18n="hero.featurePermission">Account & API permission levels</span></li>
+          <li>✅ <span data-i18n="hero.featureAudit">Full-chain audit logs</span></li>
         </ul>
         <div class="stats">
-          <div class="stat"><small>执行延迟</small><span><10 ms</span></div>
-          <div class="stat"><small>AI策略</small><span>深度/量化/套利</span></div>
-          <div class="stat"><small>安全</small><span>密钥分层加密</span></div>
+          <div class="stat"><small data-i18n="hero.statLatency">Execution Latency</small><span data-i18n="hero.statLatencyValue"><10 ms</span></div>
+          <div class="stat"><small data-i18n="hero.statAI">AI Strategy</small><span data-i18n="hero.statAIValue">Deep/Quant/Arbitrage</span></div>
+          <div class="stat"><small data-i18n="hero.statSecurity">Security</small><span data-i18n="hero.statSecurityValue">Key layered encryption</span></div>
         </div>
       </div>
     </section>
 
     <section id="features" class="section">
-      <h2>功能亮点</h2>
-      <p class="section-desc">围绕“安全、效率、透明”构建的全栈交易基础设施，适配多种 AI 策略与交易场景。</p>
+      <h2 data-i18n="features.title">Features</h2>
+      <p class="section-desc" data-i18n="features.desc">Full-stack trading infrastructure built around "Security, Efficiency, Transparency", adapted for various AI strategies and trading scenarios.</p>
       <div class="grid grid-3">
         <div class="card">
           <div class="icon-bullet">🧠</div>
-          <h3>AI策略编排</h3>
-          <p>快速接入 DeepSeek、Qwen、Claude 等模型，自由组合信号源与执行模板。</p>
+          <h3 data-i18n="features.aiStrategy">AI Strategy Orchestration</h3>
+          <p data-i18n="features.aiStrategyDesc">Quickly integrate DeepSeek, Qwen, Claude models, freely combine signal sources and execution templates.</p>
           <div class="feature-list">
-            <li>• 策略版本化</li>
-            <li>• 信号回测与对照组</li>
-            <li>• 运行中热更新</li>
+            <li>• <span data-i18n="features.aiFeature1">Strategy versioning</span></li>
+            <li>• <span data-i18n="features.aiFeature2">Signal backtesting & control groups</span></li>
+            <li>• <span data-i18n="features.aiFeature3">Runtime hot updates</span></li>
           </div>
         </div>
         <div class="card">
           <div class="icon-bullet">🛡</div>
-          <h3>安全合规</h3>
-          <p>API 密钥分级、最小权限、操作审计，敏感数据端到端加密存储。</p>
+          <h3 data-i18n="features.security">Security & Compliance</h3>
+          <p data-i18n="features.securityDesc">API key tiering, minimal permissions, operation audit, end-to-end encryption for sensitive data.</p>
           <div class="feature-list">
-            <li>• 双重签名与风控阈值</li>
-            <li>• 异常交易自动熔断</li>
-            <li>• 审计日志可导出</li>
+            <li>• <span data-i18n="features.securityFeature1">Dual signature & risk thresholds</span></li>
+            <li>• <span data-i18n="features.securityFeature2">Abnormal trade auto-circuit breaker</span></li>
+            <li>• <span data-i18n="features.securityFeature3">Exportable audit logs</span></li>
           </div>
         </div>
         <div class="card">
           <div class="icon-bullet">📈</div>
-          <h3>多交易所接入</h3>
-          <p>Binance、Hyperliquid、Bybit 等主流衍生品交易所一键绑定，支持分账户隔离。</p>
+          <h3 data-i18n="features.exchanges">Multi-Exchange Integration</h3>
+          <p data-i18n="features.exchangesDesc">One-click binding to mainstream derivatives exchanges like Binance, Hyperliquid, Bybit with sub-account isolation.</p>
           <div class="feature-list">
-            <li>• Webhook / REST / WS</li>
-            <li>• 账户风控模板化</li>
-            <li>• 资产与收益实时同步</li>
+            <li>• <span data-i18n="features.exchangesFeature1">Webhook / REST / WS</span></li>
+            <li>• <span data-i18n="features.exchangesFeature2">Template-based account risk control</span></li>
+            <li>• <span data-i18n="features.exchangesFeature3">Real-time asset & PnL sync</span></li>
           </div>
         </div>
       </div>
     </section>
 
     <section id="prototype" class="section">
-      <h2>产品展示</h2>
-      <p class="section-desc">AI 驱动、实时风控、多交易所接入。</p>
+      <h2 data-i18n="prototype.title">Product Demo</h2>
+      <p class="section-desc" data-i18n="prototype.desc">AI-driven, real-time risk control, multi-exchange integration.</p>
       <div class="gallery">
         <div class="gallery-grid">
           <div class="shot">
@@ -100,15 +101,15 @@
               <div class="screen splash-screen">
                 <div class="splash-content">
                   <div class="app-logo">X</div>
-                  <h1 class="app-name">XTrader</h1>
-                  <p class="app-tagline">AI智能交易助手</p>
+                  <h1 class="app-name" data-i18n="splash.appName">XTrader</h1>
+                  <p class="app-tagline" data-i18n="splash.tagline">AI Smart Trading Assistant</p>
                   <div class="loading-dots">
                     <span></span><span></span><span></span>
                   </div>
                 </div>
               </div>
             </div>
-            <p class="shot-label">1. 启动页</p>
+            <p class="shot-label" data-i18n="prototype.label1">1. Splash Screen</p>
           </div>
 
           <div class="shot">
@@ -116,27 +117,27 @@
               <div class="screen login-screen">
                 <div class="login-header">
                   <div class="login-logo">X</div>
-                  <h1>欢迎回来</h1>
-                  <p>登录您的XTrader账户</p>
+                  <h1 data-i18n="login.title">Welcome Back</h1>
+                  <p data-i18n="login.subtitle">Login to your XTrader account</p>
                 </div>
                 <div class="login-form">
                   <div class="input-group">
-                    <label>邮箱地址</label>
-                    <input type="text" placeholder="请输入邮箱" class="form-input">
+                    <label data-i18n="login.email">Email Address</label>
+                    <input type="text" data-i18n-placeholder="login.emailPlaceholder" placeholder="Enter your email" class="form-input">
                   </div>
                   <div class="input-group">
-                    <label>密码</label>
-                    <input type="password" placeholder="请输入密码" class="form-input">
+                    <label data-i18n="login.password">Password</label>
+                    <input type="password" data-i18n-placeholder="login.passwordPlaceholder" placeholder="Enter your password" class="form-input">
                     <span class="input-icon">👁</span>
                   </div>
-                  <a href="#" class="forgot-password">忘记密码？</a>
-                  <button class="btn-primary">登 录</button>
-                  <div class="login-divider"><span>或</span></div>
-                  <button class="btn-secondary">创建新账户</button>
+                  <a href="#" class="forgot-password" data-i18n="login.forgotPassword">Forgot password?</a>
+                  <button class="btn-primary" data-i18n="login.loginBtn">Login</button>
+                  <div class="login-divider"><span data-i18n="login.or">or</span></div>
+                  <button class="btn-secondary" data-i18n="login.createAccount">Create New Account</button>
                 </div>
               </div>
             </div>
-            <p class="shot-label">2. 登录页</p>
+            <p class="shot-label" data-i18n="prototype.label2">2. Login</p>
           </div>
 
           <div class="shot">
@@ -144,32 +145,32 @@
               <div class="screen register-screen">
                 <div class="page-header">
                   <span class="back-btn">←</span>
-                  <h2>创建账户</h2>
+                  <h2 data-i18n="register.title">Create Account</h2>
                   <span></span>
                 </div>
                 <div class="register-form">
                   <div class="input-group">
-                    <label>邮箱地址</label>
-                    <input type="text" placeholder="请输入邮箱" class="form-input">
+                    <label data-i18n="register.email">Email Address</label>
+                    <input type="text" data-i18n-placeholder="register.emailPlaceholder" placeholder="Enter your email" class="form-input">
                   </div>
                   <div class="input-group">
-                    <label>密码</label>
-                    <input type="password" placeholder="至少8位字符" class="form-input">
+                    <label data-i18n="register.password">Password</label>
+                    <input type="password" data-i18n-placeholder="register.passwordPlaceholder" placeholder="At least 8 characters" class="form-input">
                   </div>
                   <div class="input-group">
-                    <label>确认密码</label>
-                    <input type="password" placeholder="再次输入密码" class="form-input">
+                    <label data-i18n="register.confirmPassword">Confirm Password</label>
+                    <input type="password" data-i18n-placeholder="register.confirmPasswordPlaceholder" placeholder="Re-enter password" class="form-input">
                   </div>
                   <div class="checkbox-group">
                     <input type="checkbox" id="agree">
-                    <label for="agree">我已阅读并同意<a href="#">服务条款</a></label>
+                    <label for="agree"><span data-i18n="register.agree">I have read and agree to</span> <a href="#" data-i18n="register.terms">Terms of Service</a></label>
                   </div>
-                  <button class="btn-primary">注 册</button>
-                  <p class="login-link">已有账户？<a href="#">立即登录</a></p>
+                  <button class="btn-primary" data-i18n="register.registerBtn">Register</button>
+                  <p class="login-link"><span data-i18n="register.hasAccount">Already have an account?</span> <a href="#" data-i18n="register.loginNow">Login now</a></p>
                 </div>
               </div>
             </div>
-            <p class="shot-label">3. 注册页</p>
+            <p class="shot-label" data-i18n="prototype.label3">3. Register</p>
           </div>
 
           <div class="shot">
@@ -250,7 +251,7 @@
                 </nav>
               </div>
             </div>
-            <p class="shot-label">4. 首页仪表盘</p>
+            <p class="shot-label" data-i18n="prototype.label4">4. Dashboard</p>
           </div>
 
           <div class="shot">
@@ -312,7 +313,7 @@
                 </nav>
               </div>
             </div>
-            <p class="shot-label">5. AI交易员</p>
+            <p class="shot-label" data-i18n="prototype.label5">5. AI Traders</p>
           </div>
 
           <div class="shot">
@@ -381,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <p class="shot-label">6. 交易员详情</p>
+            <p class="shot-label" data-i18n="prototype.label6">6. Trader Details</p>
           </div>
 
           <div class="shot">
@@ -447,7 +448,7 @@
                 </nav>
               </div>
             </div>
-            <p class="shot-label">7. 排行榜</p>
+            <p class="shot-label" data-i18n="prototype.label7">7. Leaderboard</p>
           </div>
 
           <div class="shot">
@@ -506,7 +507,7 @@
                 </nav>
               </div>
             </div>
-            <p class="shot-label">8. 个人中心</p>
+            <p class="shot-label" data-i18n="prototype.label8">8. Profile</p>
           </div>
 
           <div class="shot">
@@ -555,7 +556,7 @@
                 </div>
               </div>
             </div>
-            <p class="shot-label">9. 创建交易员</p>
+            <p class="shot-label" data-i18n="prototype.label9">9. Create Trader</p>
           </div>
 
         </div>
@@ -563,50 +564,64 @@
     </section>
 
     <section id="privacy" class="section">
-      <h2>隐私与合规</h2>
-      <p class="section-desc">我们在收集、存储、传输与使用数据的全链路中实施加密与审计，确保数据最小化与用户可控。</p>
+      <h2 data-i18n="privacy.title">Privacy & Compliance</h2>
+      <p class="section-desc" data-i18n="privacy.desc">We implement encryption and auditing throughout the entire data lifecycle (collection, storage, transmission, and use) to ensure data minimization and user control.</p>
       <div class="grid grid-2">
         <div class="card">
           <div class="icon-bullet">🔐</div>
-          <h3>数据安全</h3>
-          <p>敏感密钥分层加密，传输全程 TLS，异常操作自动告警与冻结。</p>
+          <h3 data-i18n="privacy.dataSecurity">Data Security</h3>
+          <p data-i18n="privacy.dataSecurityDesc">Sensitive keys are encrypted in layers, all transmissions use TLS, and abnormal operations trigger automatic alerts and freezing.</p>
           <ul class="feature-list">
-            <li>• 访问控制：按角色、按环境</li>
-            <li>• 日志留存：可导出审计报表</li>
-            <li>• 备份与恢复：周期校验</li>
+            <li>• <span data-i18n="privacy.dataSecurityFeature1">Access control: by role, by environment</span></li>
+            <li>• <span data-i18n="privacy.dataSecurityFeature2">Log retention: exportable audit reports</span></li>
+            <li>• <span data-i18n="privacy.dataSecurityFeature3">Backup & recovery: periodic verification</span></li>
           </ul>
         </div>
         <div class="card">
           <div class="icon-bullet">📜</div>
-          <h3>隐私政策</h3>
-          <p>透明说明数据收集、用途、Cookie、第三方处理者、用户权利与联系我们方式。</p>
+          <h3 data-i18n="privacy.privacyPolicy">Privacy Policy</h3>
+          <p data-i18n="privacy.privacyPolicyDesc">Transparent explanation of data collection, usage, cookies, third-party processors, user rights, and contact methods.</p>
           <div class="cta" style="margin-top:10px;">
-            <a class="btn btn-primary" href="privacy.html">阅读完整政策</a>
-            <span class="chip">邮箱：taosiyuan163@163.com</span>
+            <a class="btn btn-primary" href="privacy.html" data-i18n="privacy.readFullPolicy">Read Full Policy</a>
+            <span class="chip" data-i18n="privacy.email">Email: taosiyuan163@163.com</span>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <h2>联系我们</h2>
-      <p class="section-desc">希望了解深度对接、私有化部署或合规评估，请直接发邮件，我们会尽快回复。</p>
+      <h2 data-i18n="contact.title">Contact Us</h2>
+      <p class="section-desc" data-i18n="contact.desc">For deep integration, private deployment, or compliance assessment inquiries, please email us directly and we will respond as soon as possible.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="mailto:taosiyuan163@163.com">邮件联系</a>
-        <a class="btn btn-ghost" href="#top">返回顶部</a>
+        <a class="btn btn-primary" href="mailto:taosiyuan163@163.com" data-i18n="contact.emailContact">Email Contact</a>
+        <a class="btn btn-ghost" href="#top" data-i18n="contact.backToTop">Back to Top</a>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
-        <span>© 2025 XTrader. All rights reserved.</span>
+        <span data-i18n="footer.copyright">© 2025 XTrader. All rights reserved.</span>
         <div style="display:flex;gap:12px;">
-          <a href="privacy.html">隐私政策</a>
-          <a href="mailto:taosiyuan163@163.com">联系邮箱</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="mailto:taosiyuan163@163.com" data-i18n="footer.contactEmail">Contact Email</a>
         </div>
       </div>
     </footer>
   </main>
+
+  <!-- i18n Scripts -->
+  <script src="i18n.js"></script>
+  <script>
+    // Load translations and initialize i18n
+    Promise.all([
+      fetch('lang/en.json').then(r => r.json()),
+      fetch('lang/zh.json').then(r => r.json())
+    ]).then(([en, zh]) => {
+      window.i18n.init({ en, zh });
+    }).catch(err => {
+      console.error('Failed to load translations:', err);
+    });
+  </script>
 </body>
 </html>
 

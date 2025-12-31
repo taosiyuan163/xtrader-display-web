@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "pageTitle": "XTrader | AI-Powered Intelligent Cryptocurrency Trading Platform",
+    "description": "XTrader: AI-powered intelligent cryptocurrency trading platform with multi-exchange integration, real-time risk control, and automated trading strategies."
+  },
+  "nav": {
+    "features": "Features",
+    "prototype": "Product Demo",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us",
+    "backHome": "Back to Home"
+  },
+  "hero": {
+    "eyebrow": "AI-Driven · Multi-Exchange · Real-Time Risk Control",
+    "title": "XTrader<br>AI-Powered Intelligent Cryptocurrency Trading Platform",
+    "lead": "Guard every order with intelligent algorithms. XTrader integrates strategy orchestration, exchange connectivity, and risk monitoring into one platform, providing professional traders with fast, transparent, and auditable automated trading experience.",
+    "ctaDemo": "Request Demo",
+    "ctaPrivacy": "View Privacy Policy",
+    "badge": "Supports Binance / Hyperliquid / Bybit",
+    "riskMonitoring": "Real-Time Risk Monitoring",
+    "riskDesc": "Millisecond-level data collection, risk threshold alerts, automated stop-loss/take-profit to reduce tail risk.",
+    "featureHotSwap": "Strategy hot-swap & rollback",
+    "featurePermission": "Account & API permission levels",
+    "featureAudit": "Full-chain audit logs",
+    "statLatency": "Execution Latency",
+    "statLatencyValue": "<10 ms",
+    "statAI": "AI Strategy",
+    "statAIValue": "Deep/Quant/Arbitrage",
+    "statSecurity": "Security",
+    "statSecurityValue": "Key layered encryption"
+  },
+  "features": {
+    "title": "Features",
+    "desc": "Full-stack trading infrastructure built around \"Security, Efficiency, Transparency\", adapted for various AI strategies and trading scenarios.",
+    "aiStrategy": "AI Strategy Orchestration",
+    "aiStrategyDesc": "Quickly integrate DeepSeek, Qwen, Claude models, freely combine signal sources and execution templates.",
+    "aiFeature1": "Strategy versioning",
+    "aiFeature2": "Signal backtesting & control groups",
+    "aiFeature3": "Runtime hot updates",
+    "security": "Security & Compliance",
+    "securityDesc": "API key tiering, minimal permissions, operation audit, end-to-end encryption for sensitive data.",
+    "securityFeature1": "Dual signature & risk thresholds",
+    "securityFeature2": "Abnormal trade auto-circuit breaker",
+    "securityFeature3": "Exportable audit logs",
+    "exchanges": "Multi-Exchange Integration",
+    "exchangesDesc": "One-click binding to mainstream derivatives exchanges like Binance, Hyperliquid, Bybit with sub-account isolation.",
+    "exchangesFeature1": "Webhook / REST / WS",
+    "exchangesFeature2": "Template-based account risk control",
+    "exchangesFeature3": "Real-time asset & PnL sync"
+  },
+  "prototype": {
+    "title": "Product Demo",
+    "desc": "AI-driven, real-time risk control, multi-exchange integration.",
+    "label1": "1. Splash Screen",
+    "label2": "2. Login",
+    "label3": "3. Register",
+    "label4": "4. Dashboard",
+    "label5": "5. AI Traders",
+    "label6": "6. Trader Details",
+    "label7": "7. Leaderboard",
+    "label8": "8. Profile",
+    "label9": "9. Create Trader"
+  },
+  "splash": {
+    "appName": "XTrader",
+    "tagline": "AI Smart Trading Assistant"
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Login to your XTrader account",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "loginBtn": "Login",
+    "or": "or",
+    "createAccount": "Create New Account"
+  },
+  "register": {
+    "title": "Create Account",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "At least 8 characters",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Re-enter password",
+    "agree": "I have read and agree to",
+    "terms": "Terms of Service",
+    "registerBtn": "Register",
+    "hasAccount": "Already have an account?",
+    "loginNow": "Login now"
+  },
+  "dashboard": {
+    "greeting": "Good afternoon, User",
+    "totalAsset": "Total Assets (USDT)",
+    "assetValue": "$12,458.32",
+    "assetChange": "+$234.56 (+1.92%)",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "monthlyReturn": "+18.5%",
+    "monthlyReturnLabel": "Monthly Return",
+    "runningAI": "3",
+    "runningAILabel": "Running AI",
+    "currentPositions": "Current Positions",
+    "viewAll": "View All →",
+    "long": "Long",
+    "short": "Short"
+  },
+  "traders": {
+    "title": "AI Traders",
+    "createBtn": "+ Create",
+    "configured": "Configured",
+    "aiModels": "AI Models",
+    "exchanges": "Exchange",
+    "strategy": "Strategy",
+    "running": "Running",
+    "stopped": "Stopped",
+    "totalPnL": "Total PnL",
+    "returnRate": "Return Rate",
+    "positions": "Positions",
+    "viewDetails": "View Details",
+    "pause": "Pause",
+    "start": "Start"
+  },
+  "detail": {
+    "profitCurve": "Profit Curve",
+    "days7": "7 Days",
+    "days30": "30 Days",
+    "all": "All",
+    "totalEquity": "Total Equity",
+    "availableBalance": "Available Balance",
+    "totalPnL": "Total PnL",
+    "returnRate": "Return Rate",
+    "aiDecisions": "AI Decision Log",
+    "more": "More →",
+    "today": "Today",
+    "buy": "Buy",
+    "sell": "Sell",
+    "cycle": "#"
+  },
+  "ranking": {
+    "title": "🏆 AI Arena",
+    "live": "● LIVE",
+    "weeklyLeader": "Weekly Leader",
+    "champion": "Champion"
+  },
+  "profile": {
+    "vipMember": "VIP Member",
+    "security": "Security Settings",
+    "notifications": "Notifications",
+    "darkMode": "Dark Mode",
+    "language": "Language",
+    "languageValue": "English",
+    "help": "Help & FAQ",
+    "contact": "Contact Support",
+    "about": "About XTrader",
+    "logout": "Logout"
+  },
+  "modal": {
+    "createTrader": "Create AI Trader",
+    "traderName": "Trader Name",
+    "traderNamePlaceholder": "Name your AI",
+    "selectAI": "Select AI Model",
+    "selectExchange": "Select Exchange",
+    "strategyTemplate": "Strategy Template",
+    "defaultStrategy": "Default Strategy",
+    "conservativeStrategy": "Conservative Strategy",
+    "aggressiveStrategy": "Aggressive Strategy",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+  "bottomNav": {
+    "home": "Home",
+    "aiTrading": "AI Trading",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile"
+  },
+  "privacy": {
+    "title": "Privacy & Compliance",
+    "desc": "We implement encryption and auditing throughout the entire data lifecycle (collection, storage, transmission, and use) to ensure data minimization and user control.",
+    "dataSecurity": "Data Security",
+    "dataSecurityDesc": "Sensitive keys are encrypted in layers, all transmissions use TLS, and abnormal operations trigger automatic alerts and freezing.",
+    "dataSecurityFeature1": "Access control: by role, by environment",
+    "dataSecurityFeature2": "Log retention: exportable audit reports",
+    "dataSecurityFeature3": "Backup & recovery: periodic verification",
+    "privacyPolicy": "Privacy Policy",
+    "privacyPolicyDesc": "Transparent explanation of data collection, usage, cookies, third-party processors, user rights, and contact methods.",
+    "readFullPolicy": "Read Full Policy",
+    "email": "Email: taosiyuan163@163.com"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "desc": "For deep integration, private deployment, or compliance assessment inquiries, please email us directly and we will respond as soon as possible.",
+    "emailContact": "Email Contact",
+    "backToTop": "Back to Top"
+  },
+  "footer": {
+    "copyright": "© 2025 XTrader. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "contactEmail": "Contact Email"
+  }
+}
