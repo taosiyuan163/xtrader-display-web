@@ -107,6 +107,15 @@ class I18n {
     if (titleKey) {
       document.title = this.t(titleKey.getAttribute('content'));
     }
+
+    // Update language switcher active state
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.getAttribute('data-lang') === this.currentLang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
   }
 
   /**
