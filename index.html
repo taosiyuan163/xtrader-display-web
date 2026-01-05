@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XTrader | AI-Powered Intelligent Cryptocurrency Trading Platform</title>
-  <meta name="description" content="XTrader: AI-powered intelligent cryptocurrency trading platform with multi-exchange integration, real-time risk control, and automated trading strategies.">
+  <title>XTrader | AI-Based Cryptocurrency Quantitative Trading Tool</title>
+  <meta name="description" content="XTrader: AI-based cryptocurrency quantitative trading tool with multi-exchange integration, real-time risk control, and quantitative trading strategies.">
   <meta name="i18n-page-title" content="meta.pageTitle">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -29,7 +29,7 @@
     <section class="hero">
       <div>
         <span class="eyebrow" data-i18n="hero.eyebrow">AI-Driven · Multi-Exchange · Real-Time Risk Control</span>
-        <h1><span data-i18n="hero.title">XTrader<br>AI-Powered Intelligent Cryptocurrency Trading Platform</span></h1>
+        <h1><span data-i18n="hero.title">XTrader<br/>AI-Powered Intelligent Cryptocurrency Trading Platform</span></h1>
         <p class="lead" data-i18n="hero.lead">Guard every order with intelligent algorithms. XTrader integrates strategy orchestration, exchange connectivity, and risk monitoring into one platform, providing professional traders with fast, transparent, and auditable automated trading experience.</p>
         <div class="cta">
           <a class="btn btn-primary" href="mailto:taosiyuan163@163.com" data-i18n="hero.ctaDemo">Request Demo</a>
@@ -173,6 +173,7 @@
             <p class="shot-label" data-i18n="prototype.label3">3. Register</p>
           </div>
 
+          <!-- Prototype mockups: Intentionally hardcoded in Chinese for visual demonstration -->
           <div class="shot">
             <div class="phone-frame">
               <div class="screen dashboard-screen">
@@ -614,12 +615,21 @@
   <script>
     // Load translations and initialize i18n
     Promise.all([
-      fetch('lang/en.json').then(r => r.json()),
-      fetch('lang/zh.json').then(r => r.json())
+      fetch('lang/en.json').then(r => {
+        if (!r.ok) throw new Error(`Failed to load en.json: ${r.status}`);
+        return r.json();
+      }),
+      fetch('lang/zh.json').then(r => {
+        if (!r.ok) throw new Error(`Failed to load zh.json: ${r.status}`);
+        return r.json();
+      })
     ]).then(([en, zh]) => {
+      console.log('✅ Translations loaded successfully');
       window.i18n.init({ en, zh });
+      console.log('✅ i18n initialized with language:', window.i18n.getCurrentLang());
     }).catch(err => {
-      console.error('Failed to load translations:', err);
+      console.error('❌ Failed to load translations:', err);
+      alert('Language system failed to load. Please refresh the page. Error: ' + err.message);
     });
   </script>
 </body>

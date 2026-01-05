@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XTrader Privacy Policy | XTrader 隐私政策</title>
-  <meta name="description" content="XTrader Privacy Policy - Data collection, usage, GDPR, CCPA compliance for our AI-powered cryptocurrency trading platform.">
+  <title>XTrader Privacy Policy | AI-Based Cryptocurrency Quantitative Trading Tool</title>
+  <meta name="description" content="Privacy Policy for XTrader - AI-based cryptocurrency quantitative trading tool. Data collection, usage, GDPR, CCPA compliance.">
+  <meta name="i18n-page-title" content="privacyPage.pageTitle">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,597 +17,351 @@
         <span>XTrader</span>
       </div>
       <nav class="nav-links">
-        <a href="index.html" id="nav-home">返回首页</a>
-        <a href="#contact" id="nav-contact">联系我们</a>
+        <a href="index.html" data-i18n="nav.backHome">Back to Home</a>
+        <a href="#contact" data-i18n="nav.contact">Contact Us</a>
       </nav>
     </div>
   </header>
 
-  <!-- Language Switcher -->
-  <div class="lang-switcher">
-    <button onclick="switchLang('zh')" id="lang-zh" class="active">中文</button>
-    <button onclick="switchLang('en')" id="lang-en">English</button>
-  </div>
-
   <main class="container" style="padding:40px 24px 80px;">
+    <article class="policy">
+      <h1 data-i18n="privacyPage.title">Privacy Policy</h1>
+      <p>
+        <strong data-i18n="privacyPage.effectiveDate">Effective Date:</strong>
+        <span data-i18n="privacyPage.effectiveDateValue">January 15, 2025</span><br/>
+        <strong data-i18n="privacyPage.lastRevised">Last Revised:</strong>
+        <span data-i18n="privacyPage.lastRevisedValue">January 15, 2025</span><br/>
+        <strong data-i18n="privacyPage.version">Version:</strong>
+        <span data-i18n="privacyPage.versionValue">2.0</span>
+      </p>
 
-    <!-- Chinese Content -->
-    <div id="content-zh" class="policy-lang">
-      <article class="policy">
-        <h1>隐私政策</h1>
-        <p><strong>生效日期：</strong>2025年1月15日<br>
-        <strong>上次修订：</strong>2025年1月15日<br>
-        <strong>版本：</strong>2.0</p>
+      <p data-i18n="privacyPage.intro">Thank you for using XTrader. We value your personal information and privacy protection. This policy explains how we collect, use, store, and share your information, as well as the rights you have.</p>
 
-        <p>感谢您使用 XTrader。我们重视您的个人信息与隐私保护。本政策说明我们如何收集、使用、存储与共享您的信息，以及您享有的权利。</p>
+      <p>
+        <strong data-i18n="privacyPage.operatorIdentity">Operator Identity:</strong>
+        <span data-i18n="privacyPage.operatorValue">XTrader is operated by an individual developer.</span><br/>
+        <strong data-i18n="privacyPage.contactAddress">Contact Address:</strong>
+        <span data-i18n="privacyPage.contactAddressValue">Pudong New Area, Shanghai, China</span><br/>
+        <strong data-i18n="privacyPage.privacyContact">Privacy Contact:</strong>
+        <a href="mailto:taosiyuan163@163.com">taosiyuan163@163.com</a>
+      </p>
 
-        <p><strong>运营者身份：</strong>XTrader 由个人开发者运营。<br>
-        <strong>联系地址：</strong>中国上海浦东新区<br>
-        <strong>隐私联系：</strong><a href="mailto:taosiyuan163@163.com">taosiyuan163@163.com</a></p>
+      <div class="toc">
+        <h3 data-i18n="privacyPage.tocTitle">Table of Contents</h3>
+        <ul>
+          <li><a href="#section-0"><span data-i18n="privacyPage.section0Title">0. Quick Reference</span></a></li>
+          <li><a href="#section-1"><span data-i18n="privacyPage.section1Title">1. Introduction & Scope</span></a></li>
+          <li><a href="#section-2"><span data-i18n="privacyPage.section2Title">2. Data We Collect</span></a></li>
+          <li><a href="#section-3"><span data-i18n="privacyPage.section3Title">3. How We Use Data</span></a></li>
+          <li><a href="#section-4"><span data-i18n="privacyPage.section4Title">4. Legal Basis (GDPR)</span></a></li>
+          <li><a href="#section-5"><span data-i18n="privacyPage.section5Title">5. Third-Party Service Providers</span></a></li>
+        </ul>
+      </div>
 
-        <div class="toc">
-          <h3>目录</h3>
+      <!-- Section 0: Quick Reference -->
+      <h2 id="section-0"><span data-i18n="privacyPage.section0Title">0. Quick Reference</span></h2>
+      <div class="quick-reference">
+        <div class="ref-item">
+          <h4 data-i18n="privacyPage.quickRef1Title">What data do we collect?</h4>
+          <p data-i18n="privacyPage.quickRef1Desc">Email, API keys, trading data, device logs</p>
+        </div>
+        <div class="ref-item">
+          <h4 data-i18n="privacyPage.quickRef2Title">How do we use data?</h4>
+          <p data-i18n="privacyPage.quickRef2Desc">Execute trades, AI strategies, risk control, service improvement</p>
+        </div>
+        <div class="ref-item">
+          <h4 data-i18n="privacyPage.quickRef3Title">Who do we share data with?</h4>
+          <p data-i18n="privacyPage.quickRef3Desc">Exchanges, AI providers, cloud services</p>
+        </div>
+        <div class="ref-item">
+          <h4 data-i18n="privacyPage.quickRef4Title">What are your rights?</h4>
+          <p data-i18n="privacyPage.quickRef4Desc">Access, delete, correct, object, data portability</p>
+        </div>
+      </div>
+
+      <!-- Section 1: Introduction & Scope -->
+      <h2 id="section-1"><span data-i18n="privacyPage.intro1Title">1. Introduction & Scope</span></h2>
+      <p data-i18n="privacyPage.intro1P1">XTrader is an AI-powered cryptocurrency trading platform operated by an individual developer.</p>
+
+      <p data-i18n="privacyPage.intro1P2">This policy applies to:</p>
+      <ul>
+        <li data-i18n="privacyPage.intro1L1">XTrader iOS mobile application</li>
+        <li data-i18n="privacyPage.intro1L2">XTrader web version</li>
+        <li data-i18n="privacyPage.intro1L3">All related services and features</li>
+      </ul>
+
+      <p data-i18n="privacyPage.intro1P3">This policy does not apply to:</p>
+      <ul>
+        <li data-i18n="privacyPage.intro1L4">Third-party exchanges (Binance, Hyperliquid, Bybit) privacy practices - Please refer to their respective privacy policies</li>
+        <li data-i18n="privacyPage.intro1L5">External linked websites</li>
+      </ul>
+
+      <p><strong data-i18n="privacyPage.intro1ImportantTitle">Important Notes:</strong></p>
+      <ul>
+        <li data-i18n="privacyPage.intro1Important1">Age Restriction: You must be 18 years or older to use XTrader. We do not provide services to minors.</li>
+        <li data-i18n="privacyPage.intro1Important2">Financial Nature: XTrader involves cryptocurrency trading with risk of capital loss.</li>
+      </ul>
+
+      <!-- Section 2: Data We Collect -->
+      <h2 id="section-2"><span data-i18n="privacyPage.dataCollectTitle">2. Data We Collect</span></h2>
+      <p data-i18n="privacyPage.dataCollectDesc">We collect the following types of data to provide services, ensure security, and improve product experience.</p>
+
+      <h3 data-i18n="privacyPage.dataProvidedTitle">Data You Provide Directly</h3>
+
+      <h4 data-i18n="privacyPage.dataContactTitle">A. Contact Information</h4>
+      <ul>
+        <li data-i18n="privacyPage.dataContactL1">Email Address: Used for account creation, authentication, important notifications</li>
+        <li data-i18n="privacyPage.dataContactL2">Apple Data Type: Contact Info → Email Address</li>
+        <li data-i18n="privacyPage.dataContactL3">Linked to You: Yes | Used for Tracking: No</li>
+      </ul>
+
+      <h4 data-i18n="privacyPage.dataCredentialsTitle">B. Account Credentials</h4>
+      <ul>
+        <li data-i18n="privacyPage.dataCredentialsL1">Password: Stored encrypted with hash (we cannot view your original password)</li>
+        <li data-i18n="privacyPage.dataCredentialsL2">Apple Data Type: Sensitive Info (authentication info)</li>
+        <li data-i18n="privacyPage.dataCredentialsL3">Linked to You: Yes | Used for Tracking: No</li>
+      </ul>
+
+      <h4 data-i18n="privacyPage.dataAPITitle">C. Exchange API Keys 🔐</h4>
+      <ul>
+        <li data-i18n="privacyPage.dataAPIL1">API public and private keys (encrypted storage)</li>
+        <li data-i18n="privacyPage.dataAPIL2">Permission scope: Read account, place orders, query positions (authorized by you)</li>
+        <li><strong data-i18n="privacyPage.dataAPISecurity">Security Measures:</strong>
           <ul>
-            <li><a href="#section-0-zh">0. 快速参考</a></li>
-            <li><a href="#section-1-zh">1. 引言与适用范围</a></li>
-            <li><a href="#section-2-zh">2. 我们收集的数据</a></li>
-            <li><a href="#section-3-zh">3. 数据使用目的</a></li>
-            <li><a href="#section-4-zh">4. 数据处理的法律基础（GDPR）</a></li>
-            <li><a href="#section-5-zh">5. 第三方服务提供商</a></li>
-            <li><a href="#section-6-zh">6. 数据共享与披露</a></li>
-            <li><a href="#section-7-zh">7. 跨境数据传输</a></li>
-            <li><a href="#section-8-zh">8. 数据保留期限</a></li>
-            <li><a href="#section-9-zh">9. 数据安全</a></li>
-            <li><a href="#section-10-zh">10. 您的隐私权利</a></li>
-            <li><a href="#section-11-zh">11. 自动化决策与AI透明度</a></li>
-            <li><a href="#section-12-zh">12. 未成年人隐私</a></li>
-            <li><a href="#section-13-zh">13. Cookie与同类技术</a></li>
-            <li><a href="#section-14-zh">14. 政策更新</a></li>
-            <li><a href="#section-15-zh">15. 联系我们</a></li>
-            <li><a href="#gdpr-addendum-zh"><strong>附录A：欧盟用户专项条款（GDPR）</strong></a></li>
-            <li><a href="#ccpa-addendum-zh"><strong>附录B：加州居民专项条款（CCPA）</strong></a></li>
-            <li><a href="#other-states-zh"><strong>附录C：其他美国州居民</strong></a></li>
+            <li data-i18n="privacyPage.dataAPISec1">AES-256 encrypted storage</li>
+            <li data-i18n="privacyPage.dataAPISec2">Only decrypted during trade execution and transmitted via TLS to exchanges</li>
+            <li data-i18n="privacyPage.dataAPISec3">We recommend granting only necessary minimal permissions, disable withdrawal permissions</li>
           </ul>
-        </div>
+        </li>
+        <li data-i18n="privacyPage.dataAPIL3">Apple Data Type: Sensitive Info → Other Sensitive Info</li>
+        <li data-i18n="privacyPage.dataAPIL4">Linked to You: Yes | Used for Tracking: No</li>
+      </ul>
 
-        <!-- Section 0: Quick Reference -->
-        <h2 id="section-0-zh">0. 快速参考</h2>
-        <div class="quick-reference">
-          <div class="ref-item">
-            <h4>我们收集什么数据？</h4>
-            <p>邮箱、API密钥、交易数据、设备日志 → <a href="#section-2-zh">详细列表</a></p>
-          </div>
-          <div class="ref-item">
-            <h4>数据如何使用？</h4>
-            <p>执行交易、AI策略、风控、服务改进 → <a href="#section-3-zh">查看详情</a></p>
-          </div>
-          <div class="ref-item">
-            <h4>与谁共享数据？</h4>
-            <p>交易所、AI提供商、云服务 → <a href="#section-5-zh">第三方列表</a></p>
-          </div>
-          <div class="ref-item">
-            <h4>您有什么权利？</h4>
-            <p>访问、删除、更正、反对、可携权 → <a href="#section-10-zh">行使权利</a></p>
-          </div>
-        </div>
-        <p><strong>欧盟用户：</strong><a href="#gdpr-addendum-zh">查看GDPR专属权利</a> |
-        <strong>加州用户：</strong><a href="#ccpa-addendum-zh">查看CCPA专属权利（含"不出售"声明）</a></p>
+      <h3 data-i18n="privacyPage.dataAutoTitle">Data Collected Automatically</h3>
 
-        <!-- Section 1 -->
-        <h2 id="section-1-zh">1. 引言与适用范围</h2>
-        <p><strong>XTrader</strong> 是一款AI驱动的加密货币交易平台，由个人开发者运营。</p>
+      <h4 data-i18n="privacyPage.dataTradingTitle">A. Trading & Position Data</h4>
+      <ul>
+        <li data-i18n="privacyPage.dataTradingL1">Order history: Buy/sell orders, price, quantity, timestamp</li>
+        <li data-i18n="privacyPage.dataTradingL2">Current positions: Currency, leverage, unrealized PnL</li>
+        <li data-i18n="privacyPage.dataTradingL3">Historical returns: Realized PnL, ROI</li>
+        <li data-i18n="privacyPage.dataTradingL4">Source: Synced via API from connected exchanges</li>
+        <li data-i18n="privacyPage.dataTradingL5">Apple Data Type: Financial Info → Other Financial Info</li>
+        <li data-i18n="privacyPage.dataTradingL6">Linked to You: Yes | Used for Tracking: No</li>
+      </ul>
 
-        <p><strong>本政策适用于：</strong></p>
-        <ul>
-          <li>XTrader iOS移动应用程序</li>
-          <li>XTrader网页版</li>
-          <li>所有相关服务与功能</li>
-        </ul>
+      <h3 data-i18n="privacyPage.dataNotCollectTitle">Data We Do NOT Collect ❌</h3>
+      <p data-i18n="privacyPage.dataNotCollectDesc">To protect your privacy, we explicitly state:</p>
+      <ul>
+        <li data-i18n="privacyPage.dataNotCollectL1">Location Data: We do not collect GPS or precise location</li>
+        <li data-i18n="privacyPage.dataNotCollectL2">Contacts/Photos: We do not access your contacts or photo album</li>
+        <li data-i18n="privacyPage.dataNotCollectL3">Browsing History: We do not track browsing behavior outside the app</li>
+        <li data-i18n="privacyPage.dataNotCollectL4">Advertising Identifier (IDFA): We do not use any tracking technology</li>
+        <li data-i18n="privacyPage.dataNotCollectL5">Biometric Raw Data: We do not use Face ID/Touch ID</li>
+        <li data-i18n="privacyPage.dataNotCollectL6">Crash Reporting Services: We do not use third-party crash reporting tools</li>
+      </ul>
 
-        <p><strong>本政策不适用于：</strong></p>
-        <ul>
-          <li>第三方交易所（Binance、Hyperliquid、Bybit）的隐私实践 → 请查阅其各自隐私政策</li>
-          <li>外部链接网站</li>
-        </ul>
+      <!-- Section 3: How We Use Data -->
+      <h2 id="section-3"><span data-i18n="privacyPage.dataUseTitle">3. How We Use Data</span></h2>
+      <p data-i18n="privacyPage.dataUseDesc">We only use your data within the following explicit purposes.</p>
 
-        <p><strong>重要提示：</strong></p>
-        <ul>
-          <li><strong>年龄限制：</strong>您必须年满18周岁才能使用XTrader。我们不向未成年人提供服务。</li>
-          <li><strong>金融性质：</strong>XTrader涉及加密货币交易，存在资金损失风险。</li>
-        </ul>
+      <h3 data-i18n="privacyPage.dataUseCoreTitle">Core Service Provision</h3>
+      <ul>
+        <li data-i18n="privacyPage.dataUseCoreL1">Account Management: Create, verify and manage accounts, authentication</li>
+        <li data-i18n="privacyPage.dataUseCoreL2">Trade Execution: Connect exchanges, execute buy/sell, sync positions & PnL</li>
+        <li data-i18n="privacyPage.dataUseCoreL3">AI Strategy Generation: Send market data to AI models (DeepSeek/Qwen/Claude) to generate trading recommendations</li>
+        <li data-i18n="privacyPage.dataUseCoreL4">Risk Management: Execute stop-loss/take-profit, position limit checks</li>
+      </ul>
+      <p>
+        <strong data-i18n="privacyPage.dataUseCoreData">Involves Data: Email, API keys, strategy configuration, trading data</strong><br/>
+        <strong data-i18n="privacyPage.dataUseCoreL egal">Legal Basis: Contract performance</strong>
+      </p>
 
-        <!-- Section 2 -->
-        <h2 id="section-2-zh">2. 我们收集的数据</h2>
-        <p>我们收集以下类型的数据以提供服务、确保安全并改进产品体验。</p>
+      <!-- Section 5: Third-Party Service Providers -->
+      <h2 id="section-5"><span data-i18n="privacyPage.thirdPartyTitle">5. Third-Party Service Providers</span></h2>
+      <p data-i18n="privacyPage.thirdPartyDesc">We work with the following third parties to provide services. All third parties are contractually bound to protect your data.</p>
 
-        <h3>2.1 您直接提供的数据</h3>
+      <h3 data-i18n="privacyPage.aiProvidersTitle">AI Model Providers</h3>
+      <table class="third-party-table">
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>Service</th>
+            <th>Shared Data</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong data-i18n="privacyPage.aiProviderName1">DeepSeek (深度求索)</strong></td>
+            <td data-i18n="privacyPage.aiProviderService">AI strategy generation</td>
+            <td data-i18n="privacyPage.aiProviderData">Market data, strategy parameters (no personal identifying information)</td>
+            <td data-i18n="privacyPage.aiProviderLocation1">China</td>
+          </tr>
+          <tr>
+            <td><strong data-i18n="privacyPage.aiProviderName2">Alibaba Cloud / Qwen</strong></td>
+            <td data-i18n="privacyPage.aiProviderService">AI strategy generation</td>
+            <td data-i18n="privacyPage.aiProviderData">Market data, strategy parameters (no personal identifying information)</td>
+            <td data-i18n="privacyPage.aiProviderLocation2">China</td>
+          </tr>
+          <tr>
+            <td><strong data-i18n="privacyPage.aiProviderName3">Anthropic (Claude)</strong></td>
+            <td data-i18n="privacyPage.aiProviderService">AI strategy generation</td>
+            <td data-i18n="privacyPage.aiProviderData">Market data, strategy parameters (no personal identifying information)</td>
+            <td data-i18n="privacyPage.aiProviderLocation3">USA (SCC safeguards)</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h4>A. 联系信息</h4>
-        <ul>
-          <li><strong>邮箱地址：</strong>用于账户创建、身份验证、重要通知</li>
-          <li><strong>Apple数据类型：</strong>Contact Info → Email Address</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否</li>
-        </ul>
+      <p><strong data-i18n="privacyPage.aiProtectionTitle">Privacy Protection Measures:</strong></p>
+      <ul>
+        <li data-i18n="privacyPage.aiProtectionL1">We do not send your email, name, or account ID to AI providers</li>
+        <li data-i18n="privacyPage.aiProtectionL2">Market data (such as BTC price) itself contains no personal information</li>
+        <li data-i18n="privacyPage.aiProtectionL3">AI providers are contractually bound not to use data for other purposes</li>
+      </ul>
 
-        <h4>B. 账户凭据</h4>
-        <ul>
-          <li><strong>密码：</strong>经过加密哈希存储（我们无法查看您的原始密码）</li>
-          <li><strong>Apple数据类型：</strong>Sensitive Info (authentication info)</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否</li>
-        </ul>
+      <h3 data-i18n="privacyPage.exchangesTitle">Cryptocurrency Exchanges</h3>
+      <p data-i18n="privacyPage.exchangesNote">Important Note: The following exchanges are connected by your active authorization, data sharing is based on your explicit instructions.</p>
 
-        <h4>C. 交易所API密钥 🔐</h4>
-        <ul>
-          <li><strong>API公钥与私钥（加密存储）</strong></li>
-          <li><strong>权限范围：</strong>读取账户、下单、查询持仓等（由您授权）</li>
-          <li><strong>安全措施：</strong>
-            <ul>
-              <li>AES-256加密存储</li>
-              <li>仅在执行交易时解密并通过TLS传输至交易所</li>
-              <li>我们建议仅授予必要的最小权限，禁用提现权限</li>
-            </ul>
-          </li>
-          <li><strong>Apple数据类型：</strong>Sensitive Info → Other Sensitive Info</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否</li>
-        </ul>
+      <table class="third-party-table">
+        <thead>
+          <tr>
+            <th>Exchange</th>
+            <th>Shared Data</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong data-i18n="privacyPage.exchangeName1">Binance</strong></td>
+            <td data-i18n="privacyPage.exchangeData">API keys, order instructions</td>
+            <td data-i18n="privacyPage.exchangePurpose">Execute your authorized trades</td>
+          </tr>
+          <tr>
+            <td><strong data-i18n="privacyPage.exchangeName2">Hyperliquid</strong></td>
+            <td data-i18n="privacyPage.exchangeData">API keys, order instructions</td>
+            <td data-i18n="privacyPage.exchangePurpose">Execute your authorized trades</td>
+          </tr>
+          <tr>
+            <td><strong data-i18n="privacyPage.exchangeName3">Bybit</strong></td>
+            <td data-i18n="privacyPage.exchangeData">API keys, order instructions</td>
+            <td data-i18n="privacyPage.exchangePurpose">Execute your authorized trades</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h4>D. 策略配置与交易参数</h4>
-        <ul>
-          <li>AI策略选择（DeepSeek/Qwen/Claude）</li>
-          <li>风控阈值、止盈止损参数</li>
-          <li>交易对选择、杠杆倍数</li>
-          <li><strong>Apple数据类型：</strong>User Content → Other User Content</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否</li>
-        </ul>
+      <p><strong data-i18n="privacyPage.exchangeControlTitle">Your Control:</strong></p>
+      <ul>
+        <li data-i18n="privacyPage.exchangeControlL1">You can disconnect exchange connections in XTrader at any time</li>
+        <li><span data-i18n="privacyPage.exchangeControlL2">We recommend when setting API keys on exchanges:</span>
+          <ul>
+            <li data-i18n="privacyPage.exchangeControlL2a">✅ Enable read permission, trading permission</li>
+            <li data-i18n="privacyPage.exchangeControlL2b">❌ Disable withdrawal permission</li>
+            <li data-i18n="privacyPage.exchangeControlL2c">✅ Set IP whitelist (if exchange supports)</li>
+          </ul>
+        </li>
+      </ul>
 
-        <h4>E. 支付信息</h4>
-        <ul>
-          <li><strong>支付卡信息：</strong>由Stripe支付网关处理（我们不存储完整卡号）</li>
-          <li><strong>交易记录：</strong>订阅状态、支付历史</li>
-          <li><strong>Apple数据类型：</strong>Financial Info → Purchase History</li>
-          <li><strong>是否与您关联：</strong>是（交易记录）/ 否（卡号由Stripe处理）</li>
-          <li><strong>用于追踪：</strong>否</li>
-        </ul>
+      <h3 data-i18n="privacyPage.infraTitle">Infrastructure & Cloud Services</h3>
+      <table class="third-party-table">
+        <thead>
+          <tr>
+            <th>Service Provider</th>
+            <th>Service Type</th>
+            <th>Data Scope</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong data-i18n="privacyPage.infraName">CloudCone</strong></td>
+            <td data-i18n="privacyPage.infraService">Cloud server hosting, database storage</td>
+            <td data-i18n="privacyPage.infraData">All user data (as data processor)</td>
+            <td data-i18n="privacyPage.infraLocation">USA</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h3>2.2 自动收集的数据</h3>
+      <p data-i18n="privacyPage.infraNote">Note: CloudCone acts as a 'data processor' role, only processes data according to our instructions, cannot use it independently. For EU users, we safeguard data transfer security through Standard Contractual Clauses (SCC).</p>
 
-        <h4>A. 交易与持仓数据</h4>
-        <ul>
-          <li><strong>订单历史：</strong>买入/卖出订单、价格、数量、时间戳</li>
-          <li><strong>当前持仓：</strong>币种、杠杆、未实现盈亏</li>
-          <li><strong>历史收益：</strong>已实现盈亏、ROI</li>
-          <li><strong>来源：</strong>通过API从连接的交易所同步</li>
-          <li><strong>Apple数据类型：</strong>Financial Info → Other Financial Info</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否</li>
-        </ul>
+      <h3 data-i18n="privacyPage.paymentTitle">Payment Processor</h3>
+      <table class="third-party-table">
+        <thead>
+          <tr>
+            <th>Service Provider</th>
+            <th>Shared Data</th>
+            <th>Purpose</th>
+            <th>Certification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong data-i18n="privacyPage.paymentName">Stripe</strong></td>
+            <td data-i18n="privacyPage.paymentData">Payment card information, transaction amounts</td>
+            <td data-i18n="privacyPage.paymentPurpose">Process subscription payments</td>
+            <td data-i18n="privacyPage.paymentCert">PCI-DSS Level 1</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h4>B. 设备与会话信息</h4>
-        <ul>
-          <li><strong>设备型号：</strong>例如"iPhone 14 Pro"（用于优化UI）</li>
-          <li><strong>操作系统版本：</strong>iOS版本</li>
-          <li><strong>应用版本：</strong>XTrader版本号</li>
-          <li><strong>设备标识符：</strong>UUID（用于会话管理，<strong>非IDFA</strong>）</li>
-          <li><strong>IP地址：</strong>用于安全验证、地域判断</li>
-          <li><strong>会话时长与时间戳</strong></li>
-          <li><strong>Apple数据类型：</strong>Identifiers → Device ID</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否（我们不使用IDFA或其他广告标识符）</li>
-        </ul>
+      <p><strong data-i18n="privacyPage.paymentSecurityTitle">Security Assurance:</strong></p>
+      <ul>
+        <li data-i18n="privacyPage.paymentSecurityL1">Payment card information is processed directly by Stripe, we do not store complete card numbers</li>
+        <li data-i18n="privacyPage.paymentSecurityL2">Stripe complies with PCI-DSS security standards</li>
+      </ul>
 
-        <h4>C. 使用数据与日志</h4>
-        <ul>
-          <li><strong>功能交互：</strong>访问的页面、使用的功能模块</li>
-          <li><strong>策略运行日志：</strong>AI决策记录、策略启停时间</li>
-          <li><strong>错误日志：</strong>异常堆栈（匿名化）</li>
-          <li><strong>性能数据：</strong>页面加载时间、API响应延迟</li>
-          <li><strong>Apple数据类型：</strong>Usage Data → Product Interaction</li>
-          <li><strong>是否与您关联：</strong>是 | <strong>用于追踪：</strong>否</li>
-        </ul>
+      <p><strong data-i18n="privacyPage.notUseTitle">We do NOT use:</strong></p>
+      <ul>
+        <li data-i18n="privacyPage.notUseL1">Advertising networks (such as Google Ads, Facebook Pixel)</li>
+        <li data-i18n="privacyPage.notUseL2">Third-party analytics tools (such as Google Analytics, Firebase)</li>
+        <li data-i18n="privacyPage.notUseL3">Social media plugins (such as Facebook Like button)</li>
+      </ul>
 
-        <h3>2.3 从第三方获取的数据</h3>
-        <p>当您授权连接交易所账户时，我们通过API接收：</p>
-        <ul>
-          <li>账户余额与资产</li>
-          <li>历史交易记录</li>
-          <li>当前持仓与订单状态</li>
-        </ul>
-        <p><strong>法律基础（GDPR）：</strong>合同履行（您的明确授权）</p>
+      <!-- Contact Section -->
+      <h2 id="contact"><span data-i18n="privacyPage.contactTitle">Contact Us</span></h2>
+      <p data-i18n="privacyPage.contactDesc">If you have any questions about this privacy policy or want to exercise your privacy rights, please contact us:</p>
+      <p>
+        <strong data-i18n="privacyPage.contactEmail">Email:</strong>
+        <a href="mailto:taosiyuan163@163.com">taosiyuan163@163.com</a><br/>
+        <strong data-i18n="privacyPage.contactAddress2">Address:</strong>
+        <span data-i18n="privacyPage.contactAddressValue">Pudong New Area, Shanghai, China</span>
+      </p>
 
-        <h3>2.4 我们不收集的数据 ❌</h3>
-        <p>为保护您的隐私，我们明确声明：</p>
-        <ul>
-          <li>❌ <strong>位置数据：</strong>我们不收集GPS或精确位置</li>
-          <li>❌ <strong>通讯录/照片：</strong>我们不访问您的联系人或相册</li>
-          <li>❌ <strong>浏览历史：</strong>我们不追踪应用外的浏览行为</li>
-          <li>❌ <strong>广告标识符（IDFA）：</strong>我们不使用任何追踪技术</li>
-          <li>❌ <strong>生物识别原始数据：</strong>我们不使用Face ID/Touch ID</li>
-          <li>❌ <strong>崩溃报告服务：</strong>我们不使用第三方崩溃报告工具</li>
-        </ul>
-
-        <!-- Section 3 -->
-        <h2 id="section-3-zh">3. 数据使用目的</h2>
-        <p>我们仅在以下明确目的范围内使用您的数据。</p>
-
-        <h3>3.1 核心服务提供</h3>
-        <ul>
-          <li><strong>账户管理：</strong>创建、验证和管理账户，身份认证</li>
-          <li><strong>交易执行：</strong>连接交易所、执行买入/卖出、同步持仓与盈亏</li>
-          <li><strong>AI策略生成：</strong>向AI模型（DeepSeek/Qwen/Claude）发送市场数据生成交易建议</li>
-          <li><strong>风控管理：</strong>执行止盈止损、仓位限制检查</li>
-        </ul>
-        <p><strong>涉及数据：</strong>邮箱、API密钥、策略配置、交易数据<br>
-        <strong>法律基础：</strong>合同履行</p>
-
-        <h3>3.2 安全与风险管理</h3>
-        <ul>
-          <li>欺诈检测：识别异常登录、可疑交易模式</li>
-          <li>风控触发：当触及预设阈值时暂停策略或发送告警</li>
-          <li>审计追溯：保留操作日志以应对安全事件调查</li>
-        </ul>
-        <p><strong>涉及数据：</strong>设备信息、IP地址、交易日志<br>
-        <strong>法律基础：</strong>正当利益（保护用户资产与平台安全）</p>
-
-        <h3>3.3 产品改进与分析</h3>
-        <ul>
-          <li>性能监测：分析应用加载速度、API响应时间</li>
-          <li>功能优化：了解哪些功能最常用</li>
-          <li>错误修复：收集异常日志以修复bug</li>
-        </ul>
-        <p><strong>涉及数据：</strong>使用数据、错误日志、性能指标（匿名化）<br>
-        <strong>法律基础：</strong>正当利益（服务改进）</p>
-
-        <h3>3.4 通讯与客户支持</h3>
-        <ul>
-          <li>服务通知：策略执行结果、风控告警、系统维护公告</li>
-          <li>客户支持：响应您的咨询与投诉</li>
-        </ul>
-        <p><strong>涉及数据：</strong>邮箱、账户信息<br>
-        <strong>法律基础：</strong>合同履行</p>
-
-        <h3>3.5 合规与法律义务</h3>
-        <ul>
-          <li>监管报告：应金融监管或执法机关要求提供数据</li>
-          <li>争议解决：在法律纠纷中作为证据</li>
-        </ul>
-        <p><strong>法律基础：</strong>法律义务（GDPR Art. 6(1)(c)）</p>
-
-        <!-- Section 4 -->
-        <h2 id="section-4-zh">4. 数据处理的法律基础（GDPR）</h2>
-        <p>根据欧盟《通用数据保护条例》（GDPR）第6条，我们基于以下法律基础处理您的个人数据：</p>
-
-        <table class="third-party-table">
-          <thead>
-            <tr>
-              <th>处理活动</th>
-              <th>法律基础</th>
-              <th>GDPR条款</th>
-              <th>您的权利</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>账户创建与管理</td>
-              <td>合同履行</td>
-              <td>Art. 6(1)(b)</td>
-              <td>访问、更正、删除*</td>
-            </tr>
-            <tr>
-              <td>交易执行（API连接）</td>
-              <td>合同履行</td>
-              <td>Art. 6(1)(b)</td>
-              <td>访问、更正、可携</td>
-            </tr>
-            <tr>
-              <td>AI策略生成</td>
-              <td>合同履行</td>
-              <td>Art. 6(1)(b)</td>
-              <td>访问、反对（可能影响服务）</td>
-            </tr>
-            <tr>
-              <td>安全监测、欺诈防护</td>
-              <td>正当利益</td>
-              <td>Art. 6(1)(f)</td>
-              <td>反对（需证明特殊情况）</td>
-            </tr>
-            <tr>
-              <td>产品分析与改进</td>
-              <td>正当利益</td>
-              <td>Art. 6(1)(f)</td>
-              <td>反对、限制处理</td>
-            </tr>
-            <tr>
-              <td>监管报告、法律诉讼</td>
-              <td>法律义务</td>
-              <td>Art. 6(1)(c)</td>
-              <td>有限（法律要求保留）</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>*注：删除权可能受限于法律义务（如反洗钱法要求保留交易记录5年）。</p>
-
-        <p><strong>正当利益的平衡测试：</strong><br>
-        当我们依赖"正当利益"作为法律基础时，已评估并确认：</p>
-        <ul>
-          <li>我们的利益（服务安全、改进）是合法的</li>
-          <li>数据处理对实现该利益是必要的</li>
-          <li>您的权利和自由不会受到不成比例的影响</li>
-          <li>我们已采取措施（匿名化、最小化）减少影响</li>
-        </ul>
-
-        <!-- Section 5 -->
-        <h2 id="section-5-zh">5. 第三方服务提供商</h2>
-        <p>我们与以下第三方合作以提供服务。所有第三方均受合同约束保护您的数据。</p>
-
-        <h3>5.1 AI模型提供商</h3>
-        <table class="third-party-table">
-          <thead>
-            <tr>
-              <th>提供商</th>
-              <th>服务</th>
-              <th>共享数据</th>
-              <th>隐私政策</th>
-              <th>数据位置</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>DeepSeek（深度求索）</strong></td>
-              <td>AI策略生成</td>
-              <td>市场数据、策略参数（不含个人身份信息）</td>
-              <td><a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">查看政策</a></td>
-              <td>中国</td>
-            </tr>
-            <tr>
-              <td><strong>阿里云 / Qwen</strong></td>
-              <td>AI策略生成</td>
-              <td>市场数据、策略参数（不含个人身份信息）</td>
-              <td><a href="https://chat.qwen.ai/legal-agreement/privacy-policy" target="_blank">查看政策</a></td>
-              <td>中国</td>
-            </tr>
-            <tr>
-              <td><strong>Anthropic (Claude)</strong></td>
-              <td>AI策略生成</td>
-              <td>市场数据、策略参数（不含个人身份信息）</td>
-              <td><a href="https://www.anthropic.com/privacy" target="_blank">查看政策</a></td>
-              <td>美国（SCC保障）</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p><strong>隐私保护措施：</strong></p>
-        <ul>
-          <li>我们不向AI提供商发送您的邮箱、姓名或账户ID</li>
-          <li>市场数据（如BTC价格）本身不含个人信息</li>
-          <li>AI提供商受合同约束，不得将数据用于其他目的</li>
-        </ul>
-
-        <h3>5.2 加密货币交易所</h3>
-        <p><strong>重要说明：</strong>以下交易所由您主动授权连接，数据共享基于您的明确指令。</p>
-
-        <table class="third-party-table">
-          <thead>
-            <tr>
-              <th>交易所</th>
-              <th>共享数据</th>
-              <th>用途</th>
-              <th>隐私政策</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Binance</strong></td>
-              <td>API密钥、订单指令</td>
-              <td>执行您授权的交易</td>
-              <td><a href="https://www.binance.com/en/privacy" target="_blank">Binance隐私政策</a></td>
-            </tr>
-            <tr>
-              <td><strong>Hyperliquid</strong></td>
-              <td>API密钥、订单指令</td>
-              <td>执行您授权的交易</td>
-              <td>Hyperliquid隐私政策</td>
-            </tr>
-            <tr>
-              <td><strong>Bybit</strong></td>
-              <td>API密钥、订单指令</td>
-              <td>执行您授权的交易</td>
-              <td><a href="https://www.bybit.com/en-US/privacy-policy/" target="_blank">Bybit隐私政策</a></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p><strong>您的控制权：</strong></p>
-        <ul>
-          <li>您可随时在XTrader中断开交易所连接</li>
-          <li>我们建议在交易所端设置API密钥时：
-            <ul>
-              <li>✅ 启用读取权限、交易权限</li>
-              <li>❌ 禁用提现权限</li>
-              <li>✅ 设置IP白名单（如交易所支持）</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h3>5.3 基础设施与云服务</h3>
-        <table class="third-party-table">
-          <thead>
-            <tr>
-              <th>服务商</th>
-              <th>服务类型</th>
-              <th>数据范围</th>
-              <th>数据位置</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>CloudCone</strong></td>
-              <td>云服务器托管、数据库存储</td>
-              <td>所有用户数据（作为数据处理者）</td>
-              <td>美国</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p><strong>注：</strong>CloudCone作为"数据处理者"角色，仅按我们指令处理数据，不得自行使用。对欧盟用户，我们通过标准合同条款（SCC）保障数据传输安全。</p>
-
-        <h3>5.4 支付处理商</h3>
-        <table class="third-party-table">
-          <thead>
-            <tr>
-              <th>服务商</th>
-              <th>共享数据</th>
-              <th>用途</th>
-              <th>隐私政策</th>
-              <th>认证</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Stripe</strong></td>
-              <td>支付卡信息、交易金额</td>
-              <td>处理订阅付款</td>
-              <td><a href="https://stripe.com/privacy" target="_blank">Stripe隐私政策</a></td>
-              <td>PCI-DSS Level 1</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p><strong>安全保障：</strong></p>
-        <ul>
-          <li>支付卡信息由Stripe直接处理，我们不存储完整卡号</li>
-          <li>Stripe符合PCI-DSS安全标准</li>
-        </ul>
-
-        <h3>5.5 其他第三方</h3>
-        <ul>
-          <li><strong>Google Fonts（谷歌字体）</strong>
-            <ul>
-              <li><strong>用途：</strong>网页字体加载</li>
-              <li><strong>共享数据：</strong>IP地址（加载字体时）</li>
-              <li><strong>隐私政策：</strong><a href="https://policies.google.com/privacy" target="_blank">Google隐私政策</a></li>
-              <li><strong>GDPR注意：</strong>IP地址传输至Google（美国），我们已在Cookie同意横幅中告知</li>
-            </ul>
-          </li>
-        </ul>
-
-        <p><strong>我们不使用：</strong></p>
-        <ul>
-          <li>❌ 广告网络（如Google Ads、Facebook Pixel）</li>
-          <li>❌ 第三方分析工具（如Google Analytics、Firebase）</li>
-          <li>❌ 社交媒体插件（如Facebook Like按钮）</li>
-        </ul>
-
-        <!-- Continuing with remaining sections... Due to length, this is Part 1 -->
-        <!-- The file continues with sections 6-15 and Appendices A, B, C in both Chinese and English -->
-
-        <p style="margin-top: 40px;"><em>由于篇幅限制，完整政策包含所有章节和附录。请继续查看下方内容...</em></p>
-
-      </article>
-    </div>
-
-    <!-- English Content will be added here -->
-    <div id="content-en" class="policy-lang" style="display:none;">
-      <article class="policy">
-        <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> January 15, 2025<br>
-        <strong>Last Revised:</strong> January 15, 2025<br>
-        <strong>Version:</strong> 2.0</p>
-
-        <p>Thank you for using XTrader. We value your personal information and privacy protection. This policy explains how we collect, use, store, and share your information, as well as the rights you have.</p>
-
-        <p><strong>Operator Identity:</strong> XTrader is operated by an individual developer.<br>
-        <strong>Contact Address:</strong> Pudong New Area, Shanghai, China<br>
-        <strong>Privacy Contact:</strong> <a href="mailto:taosiyuan163@163.com">taosiyuan163@163.com</a></p>
-
-        <!-- English version continues with all sections translated... -->
-
-        <p style="margin-top: 40px;"><em>Full English version with all sections and appendices continues below...</em></p>
-
-      </article>
-    </div>
-
+      <div style="margin-top: 40px; text-align: center;">
+        <a href="index.html" class="btn btn-primary" data-i18n="privacyPage.backToHome">Back to Home</a>
+      </div>
+    </article>
   </main>
 
-  <!-- Cookie Banner -->
-  <div id="cookie-banner" class="cookie-banner" style="display:none;">
-    <div class="cookie-content">
-      <p>🍪 <span id="cookie-text-zh">我们使用Cookie和类似技术以提供服务。继续使用即表示您同意我们的Cookie政策。</span>
-      <span id="cookie-text-en" style="display:none;">We use cookies and similar technologies to provide our services. By continuing to use our website, you consent to our Cookie Policy.</span>
-      <a href="#section-13-zh" id="cookie-learn-zh">了解详情</a>
-      <a href="#section-13-en" id="cookie-learn-en" style="display:none;">Learn More</a></p>
-      <div class="cookie-actions">
-        <button id="cookie-accept" class="btn btn-primary">
-          <span id="cookie-accept-zh">接受全部</span>
-          <span id="cookie-accept-en" style="display:none;">Accept All</span>
-        </button>
-        <button id="cookie-manage" class="btn btn-ghost">
-          <span id="cookie-manage-zh">管理偏好</span>
-          <span id="cookie-manage-en" style="display:none;">Manage Preferences</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer" style="margin-top: 60px;">
+  <footer class="footer">
     <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
-      <span>© 2025 XTrader. All rights reserved.</span>
+      <span data-i18n="footer.copyright">© 2025 XTrader. All rights reserved.</span>
       <div style="display:flex;gap:12px;">
-        <a href="index.html">回到首页 / Home</a>
-        <a href="mailto:taosiyuan163@163.com">联系邮箱 / Contact</a>
+        <a href="index.html" data-i18n="nav.backHome">Back to Home</a>
+        <a href="mailto:taosiyuan163@163.com" data-i18n="footer.contactEmail">Contact Email</a>
       </div>
     </div>
   </footer>
 
+  <!-- i18n Scripts -->
+  <script src="i18n.js"></script>
   <script>
-    // Language Switch Function
-    function switchLang(lang) {
-      // Toggle content visibility
-      document.getElementById('content-zh').style.display = lang === 'zh' ? 'block' : 'none';
-      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
-
-      // Update button states
-      document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
-      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-
-      // Update cookie banner text
-      document.getElementById('cookie-text-zh').style.display = lang === 'zh' ? 'inline' : 'none';
-      document.getElementById('cookie-text-en').style.display = lang === 'en' ? 'inline' : 'none';
-      document.getElementById('cookie-learn-zh').style.display = lang === 'zh' ? 'inline' : 'none';
-      document.getElementById('cookie-learn-en').style.display = lang === 'en' ? 'inline' : 'none';
-      document.getElementById('cookie-accept-zh').style.display = lang === 'zh' ? 'inline' : 'none';
-      document.getElementById('cookie-accept-en').style.display = lang === 'en' ? 'inline' : 'none';
-      document.getElementById('cookie-manage-zh').style.display = lang === 'zh' ? 'inline' : 'none';
-      document.getElementById('cookie-manage-en').style.display = lang === 'en' ? 'inline' : 'none';
-
-      // Update navigation text
-      document.getElementById('nav-home').textContent = lang === 'zh' ? '返回首页' : 'Back to Home';
-      document.getElementById('nav-contact').textContent = lang === 'zh' ? '联系我们' : 'Contact Us';
-
-      // Save preference
-      localStorage.setItem('privacy-lang', lang);
-    }
-
-    // Auto-detect language on load
-    window.addEventListener('DOMContentLoaded', function() {
-      const savedLang = localStorage.getItem('privacy-lang') ||
-                        (navigator.language.startsWith('zh') ? 'zh' : 'en');
-      switchLang(savedLang);
-
-      // Show cookie banner if not accepted
-      if (!localStorage.getItem('cookie-consent')) {
-        document.getElementById('cookie-banner').style.display = 'block';
-      }
-    });
-
-    // Cookie consent handlers
-    document.getElementById('cookie-accept').addEventListener('click', function() {
-      localStorage.setItem('cookie-consent', 'all');
-      document.getElementById('cookie-banner').style.display = 'none';
-    });
-
-    document.getElementById('cookie-manage').addEventListener('click', function() {
-      alert(localStorage.getItem('privacy-lang') === 'zh' ?
-        '偏好管理功能将在完整版中提供。目前请点击"接受全部"继续。' :
-        'Preference management will be available in the full version. Please click "Accept All" to continue.');
+    // Load translations and initialize i18n
+    Promise.all([
+      fetch('lang/en.json').then(r => {
+        if (!r.ok) throw new Error(`Failed to load en.json: ${r.status}`);
+        return r.json();
+      }),
+      fetch('lang/zh.json').then(r => {
+        if (!r.ok) throw new Error(`Failed to load zh.json: ${r.status}`);
+        return r.json();
+      })
+    ]).then(([en, zh]) => {
+      console.log('✅ Translations loaded successfully');
+      window.i18n.init({ en, zh });
+      console.log('✅ i18n initialized with language:', window.i18n.getCurrentLang());
+    }).catch(err => {
+      console.error('❌ Failed to load translations:', err);
+      alert('Language system failed to load. Please refresh the page. Error: ' + err.message);
     });
   </script>
 </body>
